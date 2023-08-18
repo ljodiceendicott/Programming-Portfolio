@@ -6,10 +6,9 @@ export default function Home() {
 
   return (
     <>
-      <main>
+      <body>
         <Header />
-        <body>This is for contra</body>
-      </main>
+      </body>
     </>
   );
 }

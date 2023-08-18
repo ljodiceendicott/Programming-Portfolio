@@ -1,0 +1,39 @@
+.price-card {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px;
+    height: 250px;
+}
+.price-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.price-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+.price-card p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+.price-card button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
