@@ -1,4 +1,6 @@
+import Footer from "~/pages/components/Footer";
 import Header from "~/pages/components/Header";
+
 import { api } from "~/utils/api";
 
 export default function Home() {
@@ -6,9 +8,20 @@ export default function Home() {
 
   return (
     <>
-      <body>
+      <div>
         <Header />
-      </body>
+        <h2>Hello</h2>
+        <h4>
+          my name is Luke Jodice. I am a 22 year old recent graduate, Looking to
+          find opportinities in the field of Software Engineering.
+          <br />
+          <br />
+          This is my portfolio, which contains my previous projects,
+          experiences, as well as other things related to my development of
+          software engineering skils.
+        </h4>
+        <Footer />
+      </div>
     </>
   );
 }

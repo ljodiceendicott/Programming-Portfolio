@@ -23,4 +23,21 @@
   .main-background{
     background-color: var(--bg-rgb);
   }
+
+  .col{
+    float: left;
+    padding: 10px;
+  }
+
+  lef{
+    width: 75%;
+  }
+  rig{
+    width: 25%
+  }
+  .row:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
   
