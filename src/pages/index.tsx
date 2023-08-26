@@ -1,4 +1,3 @@
-import Footer from "~/pages/components/Footer";
 import Header from "~/pages/components/Header";
 
 import { api } from "~/utils/api";
@@ -20,8 +19,12 @@ export default function Home() {
           experiences, as well as other things related to my development of
           software engineering skils.
         </h4>
-        <Footer />
+        </div>
+        <div>
+      <h2>Experience</h2>
+      
       </div>
+
     </>
   );
 }

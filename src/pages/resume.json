@@ -1,0 +1,213 @@
+{
+    "name": "Luke Jodice",
+    "email": "jodiceluke@gmail.com",
+    "linkedin": "www.linkedin.com/in/luke-jodice/",
+    "phone": "(508)360-7341",
+    "title": "Software Developer - Software Engineer - IT Technician",
+    "education": [
+        {
+            "school": "Endicott College, Beverly, MA",
+            "degree": "Bachelor of Science in Computer Science",
+            "honors": "GPA 3.41 Dean’s List",
+            "activities": [
+                "Computer Science Club",
+                "Gaming Gulls(Gaming Club) President"
+            ],
+            "professional_society": "Society of Women Engineers",
+            "achievements": [
+                "1st place in Hackathon - ALive: Video Recorder ( React Native) featured in Boston Globe, BostonInno, and Endicott Website"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Risk of Rain 2 Database",
+            "description": "A visual application designed to provide comprehensive information about characters, items, and enemies featured in the popular Hopoo Games title, Risk of Rain 2.",
+            "technologies": [
+                "Java"
+            ]
+        },
+        {
+            "name": "Dashboard Application",
+            "description": "An efficient productivity tool incorporating customizable widgets.",
+            "technologies": [
+                "Java"
+            ]
+        },
+        {
+            "name": "CrowdWatch - Senior Thesis Project",
+            "description": "A sophisticated tool aimed at enhancing the internal infrastructure of businesses by optimizing staffing and providing customers with real-time insights into business popularity.",
+            "technologies": [
+                "Python",
+                "HTML",
+                "CSS",
+                "JavaScript (Vanilla/Node.js)",
+                "Arduino"
+            ]
+        },
+        {
+            "name": "Musify",
+            "description": "This ambitious project endeavors to recreate the web application experience of Spotify, meticulously replicating its design and features while enabling users to personalize their application experience.",
+            "technologies": [
+                "Next.Js",
+                "React",
+                "Stripe",
+                "Supabase",
+                "PostgreSQL",
+                "Tailwind"
+            ]
+        }
+    ],
+    "technical_skills": {
+        "development": [
+            "Java",
+            "Python",
+            "JavaScript",
+            "C++",
+            ".Net",
+            "Ardino",
+            "Lua",
+            "Bash"
+        ],
+        "web_technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Node.js",
+            "Tailwind",
+            "Next.js"
+        ],
+        "communication_collaboration": [
+            "Microsoft Teams",
+            "Slack"
+        ],
+        "hosting_vc": [
+            "Git/Github",
+            "Firebase",
+            "Supabase",
+            "PostgreSQL"
+        ],
+        "project_management": [
+            "Jira",
+            "Trello"
+        ],
+        "writing": [
+            "Microsoft Suite",
+            "Google Workspace",
+            "Markdown"
+        ],
+        "workstyles": [
+            "Agile(Scrum)",
+            "Agile(Kanban)"
+        ]
+    },
+    "experience": [
+        {
+            "position": "Software Developer",
+            "company": "Freelance (JodiceSolutions, Chatham, MA - Remote)",
+            "date": "May 2023 - Current",
+            "responsibilities": [
+                "Web Development",
+                "Scripting",
+                "Documentation",
+                "Client Communication"
+            ]
+        },
+        {
+            "position": "Impact and Learning Fellow",
+            "company": "YouthBuild USA, Roxbury MA",
+            "date": "September 2022 - December 2022",
+            "responsibilities": [
+                "Data Lifecycle Management",
+                "Trello",
+                "Slack"
+            ]
+        },
+        {
+            "position": "COO/Co-Founder",
+            "company": "Sello.inc , Dennis, MA",
+            "date": "January 2022 - October 2022",
+            "responsibilities": [
+                "Software Development",
+                "Documentation",
+                "Communication",
+                "Reporting"
+            ]
+        },
+        {
+            "position": "Frontend Developer",
+            "company": "Jenzabar.inc, Boston, MA",
+            "date": "June 2021 - July 2021",
+            "responsibilities": [
+                "Website Programming",
+                "Data Coalessence",
+                "Microsoft Teams"
+            ]
+        },
+        {
+            "position": "IT intern",
+            "company": "Monomoy Regional High School, Harwich, MA",
+            "date": "January 2020",
+            "responsibilities": [
+                "Hardware Repair",
+                "Software Troubleshooting",
+                "Google Workspace"
+            ]
+        }
+    ],
+    "other_employment": [
+        {
+            "position": "Campus Ambassador",
+            "company": "College for Social Innovation, Beverly, MA",
+            "date": "January 2023 - May 2023",
+            "responsibilities": [
+                "Educate potential students on the benefits of taking part in the Semester in the City program"
+            ]
+        },
+        {
+            "position": "Closing Specialist",
+            "company": "Chatham Candy Manor, Chatham, MA",
+            "date": "May 2023 - Present",
+            "responsibilities": [
+                "Perform all responsibilities of a Retail Cashier Associate.",
+                "Delegate closing cleaning and maintenance tasks.",
+                "Handle money deposits at the bank and record transactions in internal books.",
+                "Receive and inspect products from wholesale companies.",
+                "Conduct elevated general repair and customer service tasks.",
+                "Maintain effective communication with mail and upper management teams."
+            ]
+        },
+        {
+            "position": "Store Clerk",
+            "company": "Chatham Candy Manor, Chatham, MA",
+            "date": "March 2016 - May 2023",
+            "responsibilities": [
+                "Provide exceptional customer service and respond to inquiries.",
+                "Process monetary transactions efficiently.",
+                "Ensure quality assurance of products for sale.",
+                "Train storefront staff for Candy Stockers and Retail Cashiers."
+            ]
+        },
+        {
+            "position": "Candy Stocker",
+            "company": "Chatham Candy Manor, Chatham, MA",
+            "date": "July 2016 - March 2017",
+            "responsibilities": [
+                "Regularly monitor candy inventory levels and replenish shelves to maintain a visually appealing and well-stocked display.",
+                "Arrange candy products in an organized and attractive manner to enhance sales and ease customer browsing.",
+                "Vigilantly check candy products for expiration dates, promptly removing any expired items from shelves to uphold product freshness and quality.",
+                "Accurately price and label candy items, promptly updating price tags based on pricing changes."
+            ]
+        },
+        {
+            "position": "Laborer",
+            "company": "Jodice Corporation, Chatham, MA",
+            "date": "March 2014 - August 2021",
+            "responsibilities": [
+                "Efficiently retrieved tools and materials for construction tasks, including shingle installation, deck building, and demolition.",
+                "Collaborated effectively with team members and prioritized safety compliance.",
+                "Demonstrated meticulous attention to detail and upheld quality craftsmanship standards."
+            ]
+        }
+    ]
+}
