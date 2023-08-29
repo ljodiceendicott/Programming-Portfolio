@@ -10,7 +10,6 @@ interface ItemCardProps {
 }
 
 const ItemCard: React.FC<ItemCardProps> = ({
-  className,
   title,
   company,
   description,
@@ -18,7 +17,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
   liveLink,
 }) => {
   return (
-    <div className={className}>
+    <div className="price-card">
       <h1 className="text-lg">{title}</h1>
       <h4 className="">{company}</h4>
       <div>{description}</div>
