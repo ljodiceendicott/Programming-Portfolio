@@ -23,8 +23,9 @@ const ItemCard: React.FC<ItemCardProps> = ({
       <h4 className="">{company}</h4>
       <div>{description}</div>
       <div>
-        <link href={repoLink}>Repository</link>
-        <link href={liveLink}>Live Code</link>
+        {liveLink}
+
+        {repoLink}
       </div>
     </div>
   );
