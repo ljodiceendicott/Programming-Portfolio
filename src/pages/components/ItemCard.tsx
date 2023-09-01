@@ -11,7 +11,7 @@ interface ItemCardProps {
   pageLink: string;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({
+const ItemCard: React.FC<ItemCardProps> = {
   className,
   children,
   title,
