@@ -13,6 +13,11 @@ const Navbar = () => {
           Projects
         </Link>
       </button>
+      <button className="button-menu p-1">
+        <Link href="/sections/experience" className="color-white">
+          Experiences
+        </Link>
+      </button>
       <div className="pt-1">Name</div>
     </div>
   );
