@@ -3,27 +3,34 @@ interface EmploymentCardProps {
   children?: React.ReactNode;
   title: string;
   company: string;
-  jobDescription: string;
-  jobStart: string;
-  jobEnd?: string;
+  description: string;
+  keyparts: string;
+  start?: string;
+  end?: string;
+  timeframe?: string;
 }
 
 const EmploymentCard: React.FC<EmploymentCardProps> = ({
   title,
   company,
-  jobDescription,
-  jobStart,
-  jobEnd,
+  description,
+  keyparts,
+  timeframe,
+  start,
+  end,
 }) => {
   return (
-    <div className="text-right">
+    <div className="text-center">
       <div className="text-xl">{title}</div>
       <div className="text-l">
         {company}
         <div>
-          {jobStart} - {jobEnd}
+          {keyparts}
+          <br></br>
+          {timeframe}
+          {start} {end}
         </div>
-        <div>{jobDescription}</div>
+        <div>{description}</div>
       </div>
     </div>
   );

@@ -103,56 +103,64 @@
     },
     "experience": [
         {
-            "position": "Software Developer",
-            "company": "Freelance (JodiceSolutions, Chatham, MA - Remote)",
+            "position": "Freelance Software Developer",
+            "company": "JodiceSolutions (Chatham, MA - Remote)",
             "date": "May 2023 - Current",
-            "responsibilities": [
+            "key_parts_of_job": [
                 "Web Development",
                 "Scripting",
                 "Documentation",
                 "Client Communication"
+            ],
+            "job_responsibilities": [
+                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, and modern frameworks.",
+                "Skillfully employed Bash and Python scripting to implement automated solutions for administrative processes."
             ]
         },
         {
             "position": "Impact and Learning Fellow",
             "company": "YouthBuild USA, Roxbury MA",
             "date": "September 2022 - December 2022",
-            "responsibilities": [
+            "key_parts_of_job": [
                 "Data Lifecycle Management",
                 "Trello",
                 "Slack"
-            ]
+            ],
+            "job_responsibilities": ""
         },
         {
             "position": "COO/Co-Founder",
             "company": "Sello.inc , Dennis, MA",
             "date": "January 2022 - October 2022",
-            "responsibilities": [
+            "key_parts_of_job": [
                 "Software Development",
                 "Documentation",
                 "Communication",
                 "Reporting"
-            ]
+            ],
+            "job_responsibilities": ""
         },
         {
             "position": "Frontend Developer",
             "company": "Jenzabar.inc, Boston, MA",
             "date": "June 2021 - July 2021",
-            "responsibilities": [
+            "key_parts_of_job": [
                 "Website Programming",
                 "Data Coalessence",
                 "Microsoft Teams"
-            ]
+            ],
+            "job_responsibilities": ""
         },
         {
             "position": "IT intern",
             "company": "Monomoy Regional High School, Harwich, MA",
             "date": "January 2020",
-            "responsibilities": [
+            "key_parts_of_job": [
                 "Hardware Repair",
                 "Software Troubleshooting",
                 "Google Workspace"
-            ]
+            ],
+            "job_responsibilities": ""
         }
     ],
     "other_employment": [
