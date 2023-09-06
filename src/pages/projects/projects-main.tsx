@@ -25,6 +25,40 @@ export default function projectsMain() {
         </ItemCard>
 
         <ItemCard
+          title="Learn to code Java"
+          description="A collab project with entire class in a mock Software Engineering enviorment. A learn-to-code game that teaches programming in Java."
+          repoLink="https://github.com/EndicottCollegeCSC/learn-to-code-java"
+          pageLink="/"
+        >
+          {/* Add Icons for Technology used */}
+        </ItemCard>
+        <ItemCard
+          title="Learn to code Java"
+          description="This is a representation of the use of Dijkstra's Algorithm in Java"
+          repoLink="https://github.com/ljodiceendicott/DjikstrasAlgorithm-Java"
+          pageLink="/"
+        >
+          {/* Add Icons for Technology used */}
+        </ItemCard>
+        <ItemCard
+          title="GitFast"
+          description="Helps streamline the use of Git with a GUI for ease of use"
+          repoLink="https://github.com/ljodiceendicott/GitFast"
+          pageLink="/"
+        >
+          {/* Add Icons for Technology used */}
+        </ItemCard>
+
+        <ItemCard
+          title="Musify"
+          description="Clone of the webapp for the popular music streaming service Spotify"
+          repoLink="https://github.com/ljodiceendicott/Musify"
+          pageLink="/"
+        >
+          {/* Add Icons for Technology used */}
+        </ItemCard>
+
+        <ItemCard
           title="Patrick's Portfolio"
           description="Portfolio that was built for my friend Patrick Dunn to display his videos and photos"
           repoLink="https://github.com/ljodiceendicott/Patrick-Dunn-Portfolio"

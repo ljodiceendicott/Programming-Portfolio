@@ -126,7 +126,13 @@
                 "Trello",
                 "Slack"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Creation of a report template that will be shared with affiliate programs for their own use in fundraising, promotion of impact, and also drive accountability for the data and information they share with the organization",
+                "information from the network of YouthBuild programs",
+                "Support the development and implementation of a standard Customer Feedback survey to be distributed and used by Technical Assistance teams",
+                " Develop summary reports of survey responses to be shared/discussed by TA teams",
+                "Work with field services teams to review and support data-clean up and accuracy of data entered into the system."
+            ]
         },
         {
             "position": "COO/Co-Founder",
@@ -138,7 +144,12 @@
                 "Communication",
                 "Reporting"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Spearheaded and oversaw all company operations, encompassing frontend, backend, and financial teams, ensuring seamless coordination and efficiency",
+                "Prepared and delivered comprehensive reports to the Chief Executive Officer, providing critical insights for informed decision-making",
+                "Devised and executed strategies, procedures, and business plans to drive company growth, while leading Scrum meetings on a frequent basis",
+                "Demonstrated expertise in mobile application development, harnessing the power of JavaScript and React Native to create cutting-edge solutions"
+            ]
         },
         {
             "position": "Frontend Developer",
@@ -149,7 +160,10 @@
                 "Data Coalessence",
                 "Microsoft Teams"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Constructed portlets for Endicott College's higher-education management software to inform faculty about the new DEI graduation requirements",
+                "Developed a webpage using frontend technologies (HTML/CSS/Javascript) that would display general electives that fulfill specific graduation requirements"
+            ]
         },
         {
             "position": "IT intern",
@@ -160,7 +174,10 @@
                 "Software Troubleshooting",
                 "Google Workspace"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Maintained functioning computers for both students and facultyRepaired Computers(broken screens, broken laptops, battery replacements)",
+                "Addressed issues and questions that students and faculty had"
+            ]
         }
     ],
     "other_employment": [
