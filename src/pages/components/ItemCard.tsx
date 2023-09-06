@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 interface ItemCardProps {
   className?: string;
   children?: React.ReactNode;
   title: string;
   company?: string;
   description: string;
-  repoLink?: string;
+  repoLink: string;
   liveLink?: string;
   postiveTakaway?: string;
   learningops?: string;
@@ -31,15 +33,18 @@ const ItemCard: React.FC<ItemCardProps> = ({
       <div className="inline-flex justify-items-start space-x-1">
         {children}
       </div>
-      <div>
+      {/* <div>
         <h4 className="font-bold text-green-700">Overall Project Takeaway</h4>
         {postiveTakaway}
       </div>
       <div>
         <h4 className="text-amber-700">What I Learned From Project</h4>
         {learningops}
+      </div> */}
+      <div className="text-right text-black">
+        <Link href={repoLink}>Link to Repository</Link>
       </div>
-      <div className="text-right text-black">Read more &gt;&gt;</div>
+
       {/* <div className="icons8-github"></div> */}
     </div>
   );
