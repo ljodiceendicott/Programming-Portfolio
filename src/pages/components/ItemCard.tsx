@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface ItemCardProps {
   className?: string;
   children?: React.ReactNode;
@@ -42,7 +40,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
         {learningops}
       </div> */}
       <div className="text-right text-black">
-        <Link href={repoLink}>Link to Repository</Link>
+        {/* <Link href={repoLink}>Link to Repository</Link> */}
       </div>
 
       {/* <div className="icons8-github"></div> */}
