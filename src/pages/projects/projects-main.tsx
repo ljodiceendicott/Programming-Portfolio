@@ -1,6 +1,8 @@
 import Header from "~/pages/components/Header";
 import ItemCard from "~/pages/components/ItemCard";
 
+import Link from "next/link";
+
 export default function projectsMain() {
   return (
     <main>
@@ -11,9 +13,7 @@ export default function projectsMain() {
           description="My updated Programming portfolio displaying the various programming that I have done."
           repoLink="https://github.com/ljodiceendicott/Programming-Portfolio"
           pageLink="/"
-        >
-          {/* Add Icons for Technology used */}
-        </ItemCard>
+        ></ItemCard>
 
         <ItemCard
           title="CrowdWatch"
@@ -21,7 +21,7 @@ export default function projectsMain() {
           repoLink="https://github.com/ljodiceendicott/CrowdWatch"
           pageLink="/"
         >
-          {/* Add Icons for Technology used */}
+          <Link href="/projects/crowdwatch/crowdwatch">Read More &gt;&gt;</Link>
         </ItemCard>
 
         <ItemCard
@@ -33,7 +33,7 @@ export default function projectsMain() {
           {/* Add Icons for Technology used */}
         </ItemCard>
         <ItemCard
-          title="Learn to code Java"
+          title="Dijkstra's Algorithm - Java"
           description="This is a representation of the use of Dijkstra's Algorithm in Java"
           repoLink="https://github.com/ljodiceendicott/DjikstrasAlgorithm-Java"
           pageLink="/"
@@ -46,7 +46,7 @@ export default function projectsMain() {
           repoLink="https://github.com/ljodiceendicott/GitFast"
           pageLink="/"
         >
-          {/* Add Icons for Technology used */}
+          <Link href="/projects/gitfast/gitfast">Read More &gt;&gt;</Link>
         </ItemCard>
 
         <ItemCard

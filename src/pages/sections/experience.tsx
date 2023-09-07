@@ -17,7 +17,7 @@ export default function experience() {
   return (
     <div>
       <Header />
-      <div id="content" className="flex-wrapx space-y-8 pt-8">
+      <div id="content" className="flex-wrapx w-1/3 flex-col space-y-8 pt-8">
         {jobs.map((job, index) => (
           <EmploymentCard
             key={index}
