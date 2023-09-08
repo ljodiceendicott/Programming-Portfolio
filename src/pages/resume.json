@@ -21,20 +21,6 @@
     ],
     "projects": [
         {
-            "name": "Risk of Rain 2 Database",
-            "description": "A visual application designed to provide comprehensive information about characters, items, and enemies featured in the popular Hopoo Games title, Risk of Rain 2.",
-            "technologies": [
-                "Java"
-            ]
-        },
-        {
-            "name": "Dashboard Application",
-            "description": "An efficient productivity tool incorporating customizable widgets.",
-            "technologies": [
-                "Java"
-            ]
-        },
-        {
             "name": "CrowdWatch - Senior Thesis Project",
             "description": "A sophisticated tool aimed at enhancing the internal infrastructure of businesses by optimizing staffing and providing customers with real-time insights into business popularity.",
             "technologies": [
@@ -46,8 +32,27 @@
             ]
         },
         {
+            "name": "Programming Portfolio",
+            "description": "Website showing off my projects and experience built with Typescript, Tailwind CSS, and Next.JS. Hosted using Vercel",
+            "technologies": [
+                "Next.Js",
+                "React",
+                "Typescript",
+                "Tailwind CSS",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "GitFast",
+            "description": "Streamlined UI solution for Git version control using Python and Bash",
+            "technologies": [
+                "Python",
+                "Bash"
+            ]
+        },
+        {
             "name": "Musify",
-            "description": "This ambitious project endeavors to recreate the web application experience of Spotify, meticulously replicating its design and features while enabling users to personalize their application experience.",
+            "description": "Replication of the web application experience of Spotify, using the React, Next.JS, and Tailwind CSS on the front end and Supabase, PostgreSQL as the databases",
             "technologies": [
                 "Next.Js",
                 "React",
@@ -66,39 +71,36 @@
             "C++",
             ".Net",
             "Ardino",
-            "Lua",
-            "Bash"
+            "Lua"
         ],
         "web_technologies": [
             "HTML",
             "CSS",
             "React",
             "Node.js",
-            "Tailwind",
+            "Tailwind CSS",
             "Next.js"
         ],
-        "communication_collaboration": [
-            "Microsoft Teams",
-            "Slack"
-        ],
-        "hosting_vc": [
-            "Git/Github",
+        "database": [
             "Firebase",
             "Supabase",
             "PostgreSQL"
         ],
-        "project_management": [
+        "Project Management": [
             "Jira",
-            "Trello"
+            "Trello",
+            "Agile (Scrum)",
+            "Agile (Kanban)"
         ],
-        "writing": [
-            "Microsoft Suite",
-            "Google Workspace",
-            "Markdown"
+        "MS Office": [
+            "Word",
+            "Excel",
+            "Powerpoint"
         ],
-        "workstyles": [
-            "Agile(Scrum)",
-            "Agile(Kanban)"
+        "Tools": [
+            "Bash",
+            "Git",
+            "Visual Studio"
         ]
     },
     "experience": [
@@ -113,20 +115,9 @@
                 "Client Communication"
             ],
             "job_responsibilities": [
-                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, and modern frameworks.",
-                "Skillfully employed Bash and Python scripting to implement automated solutions for administrative processes."
+                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, Typescript, and React",
+                "Employed Bash and Python scripting to implement automated solutions for administrative processes."
             ]
-        },
-        {
-            "position": "Impact and Learning Fellow",
-            "company": "YouthBuild USA, Roxbury MA",
-            "date": "September 2022 - December 2022",
-            "key_parts_of_job": [
-                "Data Lifecycle Management",
-                "Trello",
-                "Slack"
-            ],
-            "job_responsibilities": ""
         },
         {
             "position": "COO/Co-Founder",
@@ -138,7 +129,12 @@
                 "Communication",
                 "Reporting"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Spearheaded and oversaw all company operations, encompassing frontend, backend, and financial teams, ensuring seamless coordination and efficiency.",
+                "Prepared and delivered comprehensive reports to the Chief Executive Officer, providing critical insights for informed decision-making.",
+                "Devised and executed strategies, procedures, and business plans to drive company growth, while leading Scrum meetings on a frequent basis.",
+                "Demonstrated expertise in mobile application development, harnessing the power of JavaScript and React Native to create cutting-edge solutions"
+            ]
         },
         {
             "position": "Frontend Developer",
@@ -205,16 +201,6 @@
                 "Arrange candy products in an organized and attractive manner to enhance sales and ease customer browsing.",
                 "Vigilantly check candy products for expiration dates, promptly removing any expired items from shelves to uphold product freshness and quality.",
                 "Accurately price and label candy items, promptly updating price tags based on pricing changes."
-            ]
-        },
-        {
-            "position": "Laborer",
-            "company": "Jodice Corporation, Chatham, MA",
-            "date": "March 2014 - August 2021",
-            "responsibilities": [
-                "Efficiently retrieved tools and materials for construction tasks, including shingle installation, deck building, and demolition.",
-                "Collaborated effectively with team members and prioritized safety compliance.",
-                "Demonstrated meticulous attention to detail and upheld quality craftsmanship standards."
             ]
         }
     ]

@@ -3,6 +3,10 @@ import Link from "next/link";
 import Header from "~/pages/components/Header";
 import ContentHeader from "../../components/ContentHeader";
 
+import Analytics from "./src/analyticspage.png";
+import Dashboard from "./src/dashboard.png";
+import Device from "./src/device.png";
+
 export default function CrowdWatch() {
   return (
     <div>
@@ -20,25 +24,10 @@ export default function CrowdWatch() {
           Thesis Document
         </Link>
       </div>
-      <div id="gallery" className="grid-flow-row space-x-3">
-        <Image
-          src="../crowdwatch/src/dashboard.png"
-          width={50}
-          height={50}
-          alt=""
-        />
-        <Image
-          src="../crowdwatch/src/analyticspage.png"
-          width={50}
-          height={50}
-          alt=""
-        />
-        <Image
-          src="../crowdwatch/src/device.png"
-          width={50}
-          height={50}
-          alt=""
-        />
+      <div id="gallery" className="space-x-1 space-y-4 pt-10">
+        <Image src={Dashboard} width={600} height={50} alt="" />
+        <Image src={Analytics} width={400} height={50} alt="" />
+        <Image src={Device} width={400} height={50} alt="" />
       </div>
     </div>
   );

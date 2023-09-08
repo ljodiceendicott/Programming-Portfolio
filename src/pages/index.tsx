@@ -6,7 +6,7 @@ export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
   return (
-    <>
+    <div>
       <Header />
       <body className="align-center text-center">
         <h2 className="py-6 pt-20 text-3xl">Hello</h2>
@@ -21,6 +21,6 @@ export default function Home() {
 
         <h2 className="text-3xl">Projects</h2>
       </body>
-    </>
+    </div>
   );
 }

@@ -20,16 +20,13 @@ const EmploymentCard: React.FC<EmploymentCardProps> = ({
   end,
 }) => {
   return (
-    <div className="text-center">
-      <div className="text-xl">{title}</div>
+    <div className="bg-cyan-200 p-3 text-center">
+      <div className="text-2xl font-extrabold">{title}</div>
       <div className="text-l">
-        {company}
-        <div>
-          {keyparts}
-          <br></br>
-          {timeframe}
-          {start} {end}
-        </div>
+        <div className="text-xl font-bold">{company}</div>
+        <div className="py-2">{keyparts}</div>
+        {timeframe}
+        {start} {end}
         <div>{description}</div>
       </div>
     </div>
