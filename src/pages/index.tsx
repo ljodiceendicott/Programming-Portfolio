@@ -1,10 +1,13 @@
 import Header from "~/pages/components/Header";
+import ProgramCard from "~/pages/components/ProgramCard";
 
+import resume from "~/pages/resume.json";
 import { api } from "~/utils/api";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
+  const cv = resume;
   return (
     <div>
       <Header />
@@ -18,8 +21,20 @@ export default function Home() {
           experiences, as well as other things related to my development of
           software engineering skils.
         </h4>
-
-        <h2 className="text-3xl">Projects</h2>
+        <div id="projects">
+          <h2 className="pb-2 pl-4 text-left text-3xl font-bold">Projects</h2>
+          <div id="wrapper" className="flex-wrap space-x-6 px-4">
+            {cv.projects.map((project, index) => (
+              <ProgramCard
+                title={project.name}
+                description={project.description}
+                technology={project.technologies}
+                repoLink={project.githublink}
+                pageLink="/"
+              />
+            ))}
+          </div>
+        </div>
       </body>
     </div>
   );

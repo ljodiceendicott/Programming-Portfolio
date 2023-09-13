@@ -23,6 +23,7 @@
         {
             "name": "CrowdWatch - Senior Thesis Project",
             "description": "A sophisticated tool aimed at enhancing the internal infrastructure of businesses by optimizing staffing and providing customers with real-time insights into business popularity.",
+            "githublink": "https://github.com/ljodiceendicott/CrowdWatch",
             "technologies": [
                 "Python",
                 "HTML",
@@ -34,6 +35,8 @@
         {
             "name": "Programming Portfolio",
             "description": "Website showing off my projects and experience built with Typescript, Tailwind CSS, and Next.JS. Hosted using Vercel",
+            "githublink": "https://github.com/ljodiceendicott/Programming-Portfolio",
+            "liveLink": "www.lukejodice.com",
             "technologies": [
                 "Next.Js",
                 "React",
@@ -43,23 +46,41 @@
             ]
         },
         {
+            "name": "Sello",
+            "description": "Startup App for Affiliated Marketing",
+            "githublink": "https://github.com/Cello-dev",
+            "technologies": [
+                "Python",
+                "React Native",
+                "HTML/CSS"
+            ]
+        },
+        {
             "name": "GitFast",
             "description": "Streamlined UI solution for Git version control using Python and Bash",
+            "githublink": "https://github.com/ljodiceendicott/GitFast",
             "technologies": [
                 "Python",
                 "Bash"
             ]
         },
         {
-            "name": "Musify",
-            "description": "Replication of the web application experience of Spotify, using the React, Next.JS, and Tailwind CSS on the front end and Supabase, PostgreSQL as the databases",
+            "name": "PhotoMaker",
+            "description": "Program using OpenCV and facial detection to take photos",
+            "githublink": "https://github.com/ljodiceendicott/PhotoMaker",
             "technologies": [
-                "Next.Js",
-                "React",
-                "Stripe",
-                "Supabase",
-                "PostgreSQL",
-                "Tailwind"
+                "Python",
+                "OpenCV"
+            ]
+        },
+        {
+            "name": "Playlist Website",
+            "description": "Website built for my spotify playlist for my Web Development I final using only HTML and CSS",
+            "githublink": "https://github.com/ljodiceendicott/WebDev-I-Final",
+            "liveLink": "https://ljodicefinalproject.netlify.app",
+            "technologies": [
+                "HTML",
+                "CSS"
             ]
         }
     ],

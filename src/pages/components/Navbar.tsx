@@ -18,7 +18,6 @@ const Navbar = () => {
           Experiences
         </Link>
       </button>
-      <div className="pt-1">Name</div>
     </div>
   );
 };
