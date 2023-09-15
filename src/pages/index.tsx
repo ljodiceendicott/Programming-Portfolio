@@ -21,11 +21,12 @@ export default function Home() {
           experiences, as well as other things related to my development of
           software engineering skils.
         </h4>
-        <div id="projects">
-          <h2 className="pb-2 pl-4 text-left text-3xl font-bold">Projects</h2>
+        <h2 className="py-10 pl-4 text-left text-5xl font-bold">Projects</h2>
+        <div id="projects" className="columns-2 space-y-12">
           {/* <div id="wrapper" className="flex-wrap space-x-6 px-4"> */}
           {cv.projects.map((project, index) => (
             <ProgramCard
+              id={"project" + index}
               title={project.name}
               description={project.description}
               technology={project.technologies}

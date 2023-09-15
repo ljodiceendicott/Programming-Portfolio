@@ -136,8 +136,8 @@
                 "Client Communication"
             ],
             "job_responsibilities": [
-                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, Typescript, and React",
-                "Employed Bash and Python scripting to implement automated solutions for administrative processes."
+                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, Typescript, and React\n",
+                "Employed Bash and Python scripting to implement automated solutions for administrative processes.\n"
             ]
         },
         {
@@ -151,9 +151,9 @@
                 "Reporting"
             ],
             "job_responsibilities": [
-                "Spearheaded and oversaw all company operations, encompassing frontend, backend, and financial teams, ensuring seamless coordination and efficiency.",
-                "Prepared and delivered comprehensive reports to the Chief Executive Officer, providing critical insights for informed decision-making.",
-                "Devised and executed strategies, procedures, and business plans to drive company growth, while leading Scrum meetings on a frequent basis.",
+                "Spearheaded and oversaw all company operations, encompassing frontend, backend, and financial teams, ensuring seamless coordination and efficiency.\n",
+                "Prepared and delivered comprehensive reports to the Chief Executive Officer, providing critical insights for informed decision-making.\n",
+                "Devised and executed strategies, procedures, and business plans to drive company growth, while leading Scrum meetings on a frequent basis.\n",
                 "Demonstrated expertise in mobile application development, harnessing the power of JavaScript and React Native to create cutting-edge solutions"
             ]
         },
@@ -166,7 +166,10 @@
                 "Data Coalessence",
                 "Microsoft Teams"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Constructed portlets for Endicott College's higher-education management software to inform faculty about the new DEI graduation requirements\n",
+                "Developed a webpage using frontend technologies (HTML/CSS/Javascript) that would display general electives that fulfill specific graduation requirements"
+            ]
         },
         {
             "position": "IT intern",
@@ -177,7 +180,11 @@
                 "Software Troubleshooting",
                 "Google Workspace"
             ],
-            "job_responsibilities": ""
+            "job_responsibilities": [
+                "Maintained functioning devices for both students and faculty\n",
+                "Repaired Computers(broken screens, broken laptops, battery replacements)\n",
+                "Addressed technical issues with school issued devices"
+            ]
         }
     ],
     "other_employment": [
