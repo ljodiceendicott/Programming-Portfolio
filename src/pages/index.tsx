@@ -23,17 +23,22 @@ export default function Home() {
         </h4>
         <div id="projects">
           <h2 className="pb-2 pl-4 text-left text-3xl font-bold">Projects</h2>
-          <div id="wrapper" className="flex-wrap space-x-6 px-4">
-            {cv.projects.map((project, index) => (
-              <ProgramCard
-                title={project.name}
-                description={project.description}
-                technology={project.technologies}
-                repoLink={project.githublink}
-                pageLink="/"
-              />
-            ))}
-          </div>
+          {/* <div id="wrapper" className="flex-wrap space-x-6 px-4"> */}
+          {cv.projects.map((project, index) => (
+            <ProgramCard
+              title={project.name}
+              description={project.description}
+              technology={project.technologies}
+              repoLink={project.githublink}
+              pageLink="/"
+              screenshotpath={
+                "../screenshots/photos/screenshots/" +
+                project.name +
+                "_screenshot.jpg"
+              }
+            />
+          ))}
+          {/* </div> */}
         </div>
       </body>
     </div>
