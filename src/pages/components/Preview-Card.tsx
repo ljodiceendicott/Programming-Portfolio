@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface ItemCardProps {
+interface PreviewCardProps {
   className?: string;
   children?: React.ReactNode;
   title: string;
@@ -14,7 +14,7 @@ interface ItemCardProps {
   technologies: Array<string>;
 }
 
-const ItemCard: React.FC<ItemCardProps> = ({
+const ItemCard: React.FC<PreviewCardProps> = ({
   className,
   children,
   title,
@@ -31,11 +31,12 @@ const ItemCard: React.FC<ItemCardProps> = ({
       <div className="preview-card">
         <h1 className="text-2xl font-bold text-black">{title}</h1>
         <div id="techcontainer" className="flex justify-center space-x-3">
-          {technologies.map((tech, idx) => (
+          {/* {technologies.map((tech, idx) => (
             <div key={idx} id={tech + idx}>
               {tech}
             </div>
-          ))}
+          ))} */}
+          {technologies}
         </div>
         <h4 className="font-semibold text-slate-800">{company}</h4>
         <div className="flex-wrap text-black">{description}</div>
