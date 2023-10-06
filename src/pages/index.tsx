@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <body className="align-center text-center">
+      <div className="align-center text-center">
         <h2 className="py-6 pt-20 text-3xl">Hello</h2>
         <h4 className="text-xl">
           my name is Luke Jodice. I am a 22 year old recent graduate, Looking to
@@ -19,21 +19,20 @@ export default function Home() {
           <br />
           This is my portfolio, which contains my previous projects,
           experiences, as well as other things related to my development of
-          software engineering skils.
+          software engineering skills.
         </h4>
         <h2 className="py-10 pl-4 text-left text-5xl font-bold">Projects</h2>
         <div id="projects" className="columns-2 space-y-12">
-          {/* <div id="wrapper" className="flex-wrap space-x-6 px-4"> */}
           {cv.projects.map((project, index) => (
             <ItemCard
+              key={index}
               title={project.name}
               description={project.description}
               pageLink="/"
             />
           ))}
-          {/* </div> */}
         </div>
-      </body>
+      </div>
     </div>
   );
 }
