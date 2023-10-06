@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface PreviewCardProps {
   className?: string;
   children?: React.ReactNode;
@@ -42,7 +40,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
         <div className="flex-wrap text-black">{description}</div>
         <div className="flex-row text-right">{children}</div>
         <div id="links">
-          <Link href={repoLink}>Link to Github Repo</Link>
+          {/* <Link href={repoLink}>Link to Github Repo</Link> */}
         </div>
       </div>
     </>
