@@ -1,8 +1,8 @@
 import Header from "~/pages/components/Header";
+import PreviewCard from "./components/Preview-Card";
 
 import resume from "~/pages/resume.json";
 import { api } from "~/utils/api";
-import ItemCard from "./components/ItemCard";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -18,16 +18,24 @@ export default function Home() {
           find opportinities in the field of Software Engineering.
           <br />
           This is my portfolio, which contains my previous projects,
-          experiences, as well as other things related to my development of
-          software engineering skills.
+          experiences, as well as other things related to the development of my
+          skills as a Software Engineer.
+          <br />I have a strong interest in working anywhere along the
+          techstack. <br />I am also a person who makes connections with my
+          coworkers making them laugh while also being professional and reliable
         </h4>
         <h2 className="py-10 pl-4 text-left text-5xl font-bold">Projects</h2>
-        <div id="projects" className="columns-2 space-y-12">
+        <div
+          id="projects"
+          className="columns-2 space-y-12 max-md:w-screen max-md:columns-1"
+        >
           {cv.projects.map((project, index) => (
-            <ItemCard
+            <PreviewCard
               key={index}
               title={project.name}
               description={project.description}
+              repoLink={project.githublink}
+              technologies={project.technologies}
               pageLink="/"
             />
           ))}
