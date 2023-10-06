@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import img from "~/photos/screenshots/device.png";
 
@@ -33,12 +32,12 @@ const ItemCard: React.FC<ItemCardProps> = ({
         <h1 className="text-3xl font-bold">{title}</h1>
         <div id="content" className="flex-wrap">
           {description}
-          <Link
+          {/* <Link
             href={repoLink}
             className="hover:font-extrabold hover:text-blue-700"
           >
             <br /> Repo Link
-          </Link>
+          </Link> */}
         </div>
         <div id="img">
           {/* <Image
