@@ -1,8 +1,8 @@
 import Header from "~/pages/components/Header";
-import ProgramCard from "~/pages/components/ProgramCard";
 
 import resume from "~/pages/resume.json";
 import { api } from "~/utils/api";
+import ItemCard from "./components/ItemCard";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -25,18 +25,10 @@ export default function Home() {
         <div id="projects" className="columns-2 space-y-12">
           {/* <div id="wrapper" className="flex-wrap space-x-6 px-4"> */}
           {cv.projects.map((project, index) => (
-            <ProgramCard
-              id={"project" + index}
+            <ItemCard
               title={project.name}
               description={project.description}
-              technology={project.technologies}
-              repoLink={project.githublink}
               pageLink="/"
-              screenshotpath={
-                "../screenshots/photos/screenshots/" +
-                project.name +
-                "_screenshot.jpg"
-              }
             />
           ))}
           {/* </div> */}

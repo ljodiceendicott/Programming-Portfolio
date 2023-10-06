@@ -4,7 +4,7 @@ interface ItemCardProps {
   title: string;
   company?: string;
   description: string;
-  repoLink: string;
+  repoLink?: string;
   liveLink?: string;
   postiveTakaway?: string;
   learningops?: string;
