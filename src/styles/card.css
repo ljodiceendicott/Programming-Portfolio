@@ -48,10 +48,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
     width:75%;
-    height: 300px;
+    height: 400px;
 }
 .preview-card:hover {
-    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .preview-card h2 {

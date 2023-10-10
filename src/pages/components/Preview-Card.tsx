@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface PreviewCardProps {
   className?: string;
   children?: React.ReactNode;
@@ -26,7 +28,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
 }) => {
   return (
     <>
-      <div className="preview-card">
+      <div className="preview-card h-fit">
         <h1 className="text-2xl font-bold text-black">{title}</h1>
         <div id="techcontainer" className="flex justify-center space-x-3">
           {/* {technologies.map((tech, idx) => (
@@ -36,11 +38,16 @@ const ItemCard: React.FC<PreviewCardProps> = ({
           ))} */}
           {technologies}
         </div>
+        {/* This is where the Screenshot will go */}
+        <div className="flex-row">{children}</div>
         <h4 className="font-semibold text-slate-800">{company}</h4>
         <div className="flex-wrap text-black">{description}</div>
-        <div className="flex-row text-right">{children}</div>
+        <Link href="/" className="right hover:font-bold hover:underline">
+          Read more &gt;&gt;
+        </Link>
         <div id="links">
           {/* <Link href={repoLink}>Link to Github Repo</Link> */}
+          <a href={repoLink}>Link to repository for {title}</a>
         </div>
       </div>
     </>

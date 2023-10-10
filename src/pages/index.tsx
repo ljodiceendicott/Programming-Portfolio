@@ -2,11 +2,30 @@ import Header from "~/pages/components/Header";
 import PreviewCard from "./components/Preview-Card";
 
 import resume from "~/pages/resume.json";
+import Photos from "~/photos/screenshots/device.png";
+// Add the images from screenshots
+
+import Image from "next/image";
 import { api } from "~/utils/api";
 
 export default function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
+  const images = [
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+    { Photos },
+  ];
   const cv = resume;
   return (
     <div>
@@ -37,7 +56,15 @@ export default function Home() {
               repoLink={project.githublink}
               technologies={project.technologies}
               pageLink="/"
-            />
+            >
+              <Image
+                src={Photos}
+                alt={""}
+                height={100}
+                width={100}
+                className="m-auto py-5"
+              />
+            </PreviewCard>
           ))}
         </div>
       </div>
