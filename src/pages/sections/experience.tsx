@@ -3,21 +3,13 @@ import EmploymentCard from "../components/Employment-Card";
 
 import Resume from "../resume.json";
 
-interface jobobj {
-  position: string;
-  company: string;
-  timeframe: string;
-  jobdescription: string;
-  key_parts: Array<string>;
-}
-
 export default function experience() {
   const jobs = Resume.experience;
 
   return (
     <div>
       <Header />
-      <div id="content" className="flex-wrapx space-y-8 pt-8">
+      <div id="content" className="m-auto w-1/2 space-y-10 pt-10 text-left">
         {jobs.map((job, index) => (
           <EmploymentCard
             key={index}

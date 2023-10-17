@@ -21,22 +21,9 @@
     ],
     "projects": [
         {
-            "name": "Risk of Rain 2 Database",
-            "description": "A visual application designed to provide comprehensive information about characters, items, and enemies featured in the popular Hopoo Games title, Risk of Rain 2.",
-            "technologies": [
-                "Java"
-            ]
-        },
-        {
-            "name": "Dashboard Application",
-            "description": "An efficient productivity tool incorporating customizable widgets.",
-            "technologies": [
-                "Java"
-            ]
-        },
-        {
             "name": "CrowdWatch - Senior Thesis Project",
             "description": "A sophisticated tool aimed at enhancing the internal infrastructure of businesses by optimizing staffing and providing customers with real-time insights into business popularity.",
+            "githublink": "https://github.com/ljodiceendicott/CrowdWatch",
             "technologies": [
                 "Python",
                 "HTML",
@@ -46,15 +33,54 @@
             ]
         },
         {
-            "name": "Musify",
-            "description": "This ambitious project endeavors to recreate the web application experience of Spotify, meticulously replicating its design and features while enabling users to personalize their application experience.",
+            "name": "Programming Portfolio",
+            "description": "Website showing off my projects and experience built with Typescript, Tailwind CSS, and Next.JS. Hosted using Vercel",
+            "githublink": "https://github.com/ljodiceendicott/Programming-Portfolio",
+            "liveLink": "www.lukejodice.com",
             "technologies": [
                 "Next.Js",
                 "React",
-                "Stripe",
-                "Supabase",
-                "PostgreSQL",
-                "Tailwind"
+                "Typescript",
+                "Tailwind CSS",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "Sello",
+            "description": "Startup App for Affiliated Marketing",
+            "githublink": "https://github.com/Cello-dev",
+            "technologies": [
+                "Python",
+                "React Native",
+                "HTML/CSS"
+            ]
+        },
+        {
+            "name": "GitFast",
+            "description": "Streamlined UI solution for Git version control using Python and Bash",
+            "githublink": "https://github.com/ljodiceendicott/GitFast",
+            "technologies": [
+                "Python",
+                "Bash"
+            ]
+        },
+        {
+            "name": "PhotoMaker",
+            "description": "Program using OpenCV and facial detection to take photos",
+            "githublink": "https://github.com/ljodiceendicott/PhotoMaker",
+            "technologies": [
+                "Python",
+                "OpenCV"
+            ]
+        },
+        {
+            "name": "Playlist Website",
+            "description": "Website built for my spotify playlist for my Web Development I final using only HTML and CSS",
+            "githublink": "https://github.com/ljodiceendicott/WebDev-I-Final",
+            "liveLink": "https://ljodicefinalproject.netlify.app",
+            "technologies": [
+                "HTML",
+                "CSS"
             ]
         }
     ],
@@ -66,39 +92,36 @@
             "C++",
             ".Net",
             "Ardino",
-            "Lua",
-            "Bash"
+            "Lua"
         ],
         "web_technologies": [
             "HTML",
             "CSS",
             "React",
             "Node.js",
-            "Tailwind",
+            "Tailwind CSS",
             "Next.js"
         ],
-        "communication_collaboration": [
-            "Microsoft Teams",
-            "Slack"
-        ],
-        "hosting_vc": [
-            "Git/Github",
+        "database": [
             "Firebase",
             "Supabase",
             "PostgreSQL"
         ],
-        "project_management": [
+        "Project Management": [
             "Jira",
-            "Trello"
+            "Trello",
+            "Agile (Scrum)",
+            "Agile (Kanban)"
         ],
-        "writing": [
-            "Microsoft Suite",
-            "Google Workspace",
-            "Markdown"
+        "MS Office": [
+            "Word",
+            "Excel",
+            "Powerpoint"
         ],
-        "workstyles": [
-            "Agile(Scrum)",
-            "Agile(Kanban)"
+        "Tools": [
+            "Bash",
+            "Git",
+            "Visual Studio"
         ]
     },
     "experience": [
@@ -113,25 +136,8 @@
                 "Client Communication"
             ],
             "job_responsibilities": [
-                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, and modern frameworks.",
-                "Skillfully employed Bash and Python scripting to implement automated solutions for administrative processes."
-            ]
-        },
-        {
-            "position": "Impact and Learning Fellow",
-            "company": "YouthBuild USA, Roxbury MA",
-            "date": "September 2022 - December 2022",
-            "key_parts_of_job": [
-                "Data Lifecycle Management",
-                "Trello",
-                "Slack"
-            ],
-            "job_responsibilities": [
-                "Creation of a report template that will be shared with affiliate programs for their own use in fundraising, promotion of impact, and also drive accountability for the data and information they share with the organization",
-                "information from the network of YouthBuild programs",
-                "Support the development and implementation of a standard Customer Feedback survey to be distributed and used by Technical Assistance teams",
-                " Develop summary reports of survey responses to be shared/discussed by TA teams",
-                "Work with field services teams to review and support data-clean up and accuracy of data entered into the system."
+                "Proficiently designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, Typescript, and React\n",
+                "Employed Bash and Python scripting to implement automated solutions for administrative processes.\n"
             ]
         },
         {
@@ -145,9 +151,10 @@
                 "Reporting"
             ],
             "job_responsibilities": [
-                "Spearheaded and oversaw all company operations, encompassing frontend, backend, and financial teams, ensuring seamless coordination and efficiency",
-                "Prepared and delivered comprehensive reports to the Chief Executive Officer, providing critical insights for informed decision-making",
-                "Devised and executed strategies, procedures, and business plans to drive company growth, while leading Scrum meetings on a frequent basis",
+                "Spearheaded and oversaw all company operations, encompassing frontend, backend, and financial teams, ensuring seamless coordination and efficiency.\n",
+                "Prepared and delivered comprehensive reports to the Chief Executive Officer, providing critical insights for informed decision-making.\n",
+                "Devised and executed strategies, procedures, and business plans to drive company growth, while leading Scrum meetings on a frequent basis.\n",
+
                 "Demonstrated expertise in mobile application development, harnessing the power of JavaScript and React Native to create cutting-edge solutions"
             ]
         },
@@ -161,7 +168,8 @@
                 "Microsoft Teams"
             ],
             "job_responsibilities": [
-                "Constructed portlets for Endicott College's higher-education management software to inform faculty about the new DEI graduation requirements",
+                "Constructed portlets for Endicott College's higher-education management software to inform faculty about the new DEI graduation requirements\n",
+
                 "Developed a webpage using frontend technologies (HTML/CSS/Javascript) that would display general electives that fulfill specific graduation requirements"
             ]
         },
@@ -175,8 +183,10 @@
                 "Google Workspace"
             ],
             "job_responsibilities": [
-                "Maintained functioning computers for both students and facultyRepaired Computers(broken screens, broken laptops, battery replacements)",
-                "Addressed issues and questions that students and faculty had"
+                "Maintained functioning devices for both students and faculty\n",
+                "Repaired Computers(broken screens, broken laptops, battery replacements)\n",
+                "Addressed technical issues with school issued devices"
+
             ]
         }
     ],
@@ -222,16 +232,6 @@
                 "Arrange candy products in an organized and attractive manner to enhance sales and ease customer browsing.",
                 "Vigilantly check candy products for expiration dates, promptly removing any expired items from shelves to uphold product freshness and quality.",
                 "Accurately price and label candy items, promptly updating price tags based on pricing changes."
-            ]
-        },
-        {
-            "position": "Laborer",
-            "company": "Jodice Corporation, Chatham, MA",
-            "date": "March 2014 - August 2021",
-            "responsibilities": [
-                "Efficiently retrieved tools and materials for construction tasks, including shingle installation, deck building, and demolition.",
-                "Collaborated effectively with team members and prioritized safety compliance.",
-                "Demonstrated meticulous attention to detail and upheld quality craftsmanship standards."
             ]
         }
     ]

@@ -1,6 +1,6 @@
 .price-card {
     display:grid;
-    background-color: #96B9D0;
+    background-color: #60686d;
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -37,4 +37,36 @@
     margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+.preview-card {
+    display:grid;
+    background-color: #60686d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left:20%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width:75%;
+    height: 400px;
+}
+.preview-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.preview-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+.preview-card p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+#links:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#techcontainer{
+    border: #333 5px 5px;
 }
