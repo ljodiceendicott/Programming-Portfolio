@@ -47,7 +47,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
         </Link>
         <div id="links">
           {/* <Link href={repoLink}>Link to Github Repo</Link> */}
-          <a href={repoLink}>Link to repository for {title}</a>
+          {/* <a href={repoLink}>Link to repository for {title}</a> */}
         </div>
       </div>
     </>
