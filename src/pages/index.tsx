@@ -2,48 +2,26 @@ import Header from "~/pages/components/Header";
 import PreviewCard from "./components/Preview-Card";
 
 import resume from "~/pages/resume.json";
-import Photos from "~/photos/screenshots/device.png";
 // Add the images from screenshots
 
-import Image from "next/image";
-import { api } from "~/utils/api";
 
 export default function Home() {
-  const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
-  const images = [
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-    { Photos },
-  ];
   const cv = resume;
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       <div className="align-center text-center">
-        <h2 className="py-6 pt-20 text-3xl">Hello</h2>
+        <h2 className="py-6 pt-20 text-3xl">Hello <br/><br/></h2>
+        <h2 className="text-2xl">Welcome to my portfolio!</h2>
         <h4 className="text-xl">
-          my name is Luke Jodice. I am a 22 year old recent graduate, Looking to
-          find opportinities in the field of Software Engineering.
-          <br />
-          This is my portfolio, which contains my previous projects,
-          experiences, as well as other things related to the development of my
-          skills as a Software Engineer.
-          <br />I have a strong interest in working anywhere along the
-          techstack. <br />I am also a person who makes connections with my
-          coworkers making them laugh while also being professional and reliable
+          My name is Luke Jodice.
+          <br /><br/>
+          I am glad that you came.
+          <br /><br/>I have a strong interest in working anywhere along the techstack
+          and also like to make connections with my coworkers and other business
+          professionals
         </h4>
-        <h2 className="py-10 pl-4 text-left text-5xl font-bold">Projects</h2>
+        <h2 className="py-10 pl-4 text-left text-4xl font-bold">Projects</h2>
         <div
           id="projects"
           className="columns-2 space-y-12 max-md:w-screen max-md:columns-1"
@@ -56,15 +34,7 @@ export default function Home() {
               repoLink={project.githublink}
               technologies={project.technologies}
               pageLink="/"
-            >
-              <Image
-                src={Photos}
-                alt={""}
-                height={100}
-                width={100}
-                className="m-auto py-5"
-              />
-            </PreviewCard>
+            ></PreviewCard>
           ))}
         </div>
       </div>

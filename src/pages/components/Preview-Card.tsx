@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 interface PreviewCardProps {
   className?: string;
@@ -28,27 +27,16 @@ const ItemCard: React.FC<PreviewCardProps> = ({
 }) => {
   return (
     <>
-      <div className="preview-card h-fit">
-        <h1 className="text-2xl font-bold text-black">{title}</h1>
+      <div className="preview-card h-fit bg-black text-white">
+        <h1 className="text-2xl font-bold">{title}</h1>
         <div id="techcontainer" className="flex justify-center space-x-3">
-          {/* {technologies.map((tech, idx) => (
-            <div key={idx} id={tech + idx}>
-              {tech}
-            </div>
-          ))} */}
           {technologies}
         </div>
-        {/* This is where the Screenshot will go */}
         <div className="flex-row">{children}</div>
-        <h4 className="font-semibold text-slate-800">{company}</h4>
-        <div className="flex-wrap text-black">{description}</div>
-        <Link href="/" className="right hover:font-bold hover:underline">
-          Read more &gt;&gt;
-        </Link>
-        <div id="links">
+        <h4 className="font-semibold">{company}</h4>
+        <div className="flex-wrap">{description}</div>
           {/* <Link href={repoLink}>Link to Github Repo</Link> */}
           {/* <a href={repoLink}>Link to repository for {title}</a> */}
-        </div>
       </div>
     </>
   );
