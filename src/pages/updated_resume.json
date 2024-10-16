@@ -1,0 +1,218 @@
+{
+    "name": "Luke Jodice",
+    "email": "jodiceluke@gmail.com",
+    "linkedin": "www.linkedin.com/in/luke-jodice/",
+    "phone": "(508)360-7341",
+    "title": "Software Developer - Software Engineer - IT Technician",
+    "education": [
+        {
+            "school": "Endicott College, Beverly, MA",
+            "degree": "Bachelor of Science in Computer Science",
+            "honors": "GPA 3.41 Dean’s List",
+            "activities": [
+                "Computer Science Club",
+                "Gaming Gulls (Gaming Club) President"
+            ],
+            "achievements": [
+                "1st place in Hackathon - ALive: Video Recorder (React Native) featured in Boston Globe, BostInno, and The Endicott College Website"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "CrowdWatch - Senior Thesis Project",
+            "description": "A sophisticated tool aimed at enhancing the internal infrastructure of businesses by optimizing staffing and providing customers with real-time insights into business popularity.",
+            "githublink": "https://github.com/ljodiceendicott/CrowdWatch",
+            "technologies": [
+                "Python",
+                "HTML",
+                "CSS",
+                "JavaScript (Vanilla/Node.js)",
+                "Arduino"
+            ]
+        },
+        {
+            "name": "Personal Portfolio",
+            "description": "Website showing off my projects and experience built with Typescript, Tailwind CSS, and Next.JS. Hosted using Vercel",
+            "githublink": "https://github.com/ljodiceendicott/Programming-Portfolio",
+            "liveLink": "www.lukejodice.com",
+            "technologies": [
+                "Next.Js",
+                "React",
+                "Typescript",
+                "Tailwind CSS",
+                "Vercel"
+            ]
+        },
+        {
+            "name": "GitFast",
+            "description": "Streamlined UI solution for Git version control using Python and Bash",
+            "githublink": "https://github.com/ljodiceendicott/GitFast",
+            "technologies": [
+                "Python",
+                "Bash"
+            ]
+        },
+        {
+            "name": "Musify",
+            "description": "Replication of the web application experience of Spotify.",
+            "githublink": "https://github.com/ljodiceendicott/Musify",
+            "technologies": [
+                "React",
+                "Next.JS",
+                "Tailwind CSS",
+                "Supabase",
+                "PostgreSQL"
+            ]
+        }
+    ],
+    "technical_skills": {
+        "development": [
+            "Java",
+            "Python",
+            "JavaScript",
+            "C++",
+            ".Net",
+            "Arduino",
+            "Lua"
+        ],
+        "web_technologies": [
+            "HTML",
+            "CSS",
+            "React",
+            "Node.js",
+            "Tailwind CSS",
+            "Next.js"
+        ],
+        "database": [
+            "Firebase",
+            "Supabase",
+            "PostgreSQL"
+        ],
+        "Project Management": [
+            "Jira",
+            "Trello",
+            "Agile (Scrum)",
+            "Agile (Kanban)"
+        ],
+        "MS Office": [
+            "Word",
+            "Excel",
+            "PowerPoint"
+        ],
+        "Tools": [
+            "Bash",
+            "Git",
+            "Visual Studio"
+        ]
+    },
+    "experience": [
+        {
+            "position": "Technical Support Representative",
+            "company": "Quickbase",
+            "date": "December 2023 - Current",
+            "key_parts_of_job": [
+                "Troubleshooting",
+                "Documentation",
+                "Client Communication"
+            ],
+            "job_responsibilities": [
+                "Troubleshoot technical issues for Quickbase employees and clients.",
+                "Communicated with cross-functional teams during support case investigations.",
+                "Bridged communication between clients and internal teams to identify and resolve issues."
+            ]
+        },
+        {
+            "position": "Freelance Software Developer",
+            "company": "JodiceSolutions, Remote",
+            "date": "May 2023 - October 2023",
+            "key_parts_of_job": [
+                "Web Development",
+                "Scripting",
+                "Documentation",
+                "Client Communication"
+            ],
+            "job_responsibilities": [
+                "Designed and developed user-friendly websites and software applications utilizing HTML, CSS, JavaScript, Typescript, and React.",
+                "Employed Bash and Python scripting to implement automated solutions for administrative processes."
+            ]
+        },
+        {
+            "position": "Impact and Learning Fellow",
+            "company": "YouthBuild USA, Roxbury, MA",
+            "date": "September 2022 - December 2022",
+            "key_parts_of_job": [
+                "Data Lifecycle Management",
+                "Documentation"
+            ],
+            "job_responsibilities": [
+                "Created a report template using Excel for affiliate programs.",
+                "Supported the development of a standard Customer Feedback survey using Qualtrics.",
+                "Developed summary reports of survey responses."
+            ]
+        },
+        {
+            "position": "COO/Co-Founder",
+            "company": "Sello.inc, Dennis, MA",
+            "date": "January 2022 - October 2022",
+            "key_parts_of_job": [
+                "Software Development",
+                "Documentation",
+                "Communication",
+                "Reporting"
+            ],
+            "job_responsibilities": [
+                "Spearheaded and oversaw all company operations.",
+                "Communicated with the CEO for informed decision-making.",
+                "Led Scrum meetings and developed the frontend of the application using React Native."
+            ]
+        },
+        {
+            "position": "Frontend Developer",
+            "company": "Jenzabar.inc, Boston, MA",
+            "date": "June 2021 - July 2021",
+            "key_parts_of_job": [
+                "Website Programming",
+                "Data Coalessence"
+            ],
+            "job_responsibilities": [
+                "Constructed portlets for Endicott College's higher-education management software.",
+                "Developed a webpage using HTML/CSS/JavaScript to display graduation requirements."
+            ]
+        },
+        {
+            "position": "IT Intern",
+            "company": "Monomoy Regional High School, Harwich, MA",
+            "date": "January 2020",
+            "key_parts_of_job": [
+                "Hardware Repair",
+                "Software Troubleshooting"
+            ],
+            "job_responsibilities": [
+                "Maintained functioning devices for both students and faculty.",
+                "Repaired computers and addressed technical issues."
+            ]
+        }
+    ],
+    "other_employment": [
+        {
+            "position": "Campus Ambassador",
+            "company": "College for Social Innovation, Beverly, MA",
+            "date": "January 2023 - May 2023",
+            "responsibilities": [
+                "Educate potential students on the benefits of taking part in the Semester in the City program."
+            ]
+        },
+        {
+            "position": "Closing Specialist",
+            "company": "Chatham Candy Manor, Chatham, MA",
+            "date": "May 2023 - Present",
+            "responsibilities": [
+                "Perform all responsibilities of a Retail Cashier Associate.",
+                "Delegate closing cleaning and maintenance tasks.",
+                "Handle money deposits at the bank and record transactions.",
+                "Receive and inspect products from wholesale companies."
+            ]
+        }
+    ]
+}

@@ -7,6 +7,17 @@
     --button-color: #4717f6;
     --text-color : whitesmoke;
   }
+  .background-coloring{
+    /* background: hsla(240, 35%, 91%, 1); */
+    
+      background: linear-gradient(360deg, hsla(240, 35%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 9%, hsla(0, 0%, 100%, 1) 73%, hsla(0, 0%, 88%, 1) 100%);
+    
+      background: -moz-linear-gradient(360deg, hsla(240, 35%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 9%, hsla(0, 0%, 100%, 1) 73%, hsla(0, 0%, 88%, 1) 100%);
+    
+      background: -webkit-linear-gradient(360deg, hsla(240, 35%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 9%, hsla(0, 0%, 100%, 1) 73%, hsla(0, 0%, 88%, 1) 100%);
+    
+      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E0E0F0", endColorstr="#ffffff", GradientType=1);
+  }
   .button-menu{
     background-color: var(--bg-rgb);
     border-radius: 5px;

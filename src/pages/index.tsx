@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Header />
-      <div className="align-center text-center">
+      <div className="align-center text-center background-coloring">
         <h2 className="py-6 pt-20 text-3xl">Hello <br/><br/></h2>
         <h2 className="text-2xl">Welcome to my portfolio!</h2>
         <h4 className="text-xl">
