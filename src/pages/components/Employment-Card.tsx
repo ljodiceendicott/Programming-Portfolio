@@ -56,10 +56,11 @@ have provided, works for my use-case.
         {start} {end}
         <br/><br/>
         <ul id="description list" className="space-y-3">
-          <li>{description[0]}</li>
+    {description}
+          {/* <li>{description[0]}</li>
           <li>{description[1]}</li>
           <li>{description[2]}</li>
-          <li>{description[3]}</li>
+          <li>{description[3]}</li> */}
         </ul>
         </div>
     </div>
