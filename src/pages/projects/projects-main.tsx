@@ -8,7 +8,7 @@ export default function projectsMain() {
     <main>
       <Header />
       <div id="content" className="w-1/2 space-y-20 pt-10 text-left ml-8 mt-12">
-        <ItemCard
+         <ItemCard
           title="Programming Portfolio"
           description="My updated Programming portfolio displaying the various programming that I have done."
           repoLink="https://github.com/ljodiceendicott/Programming-Portfolio"
