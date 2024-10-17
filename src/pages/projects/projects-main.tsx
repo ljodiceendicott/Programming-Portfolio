@@ -7,7 +7,7 @@ export default function projectsMain() {
   return (
     <main>
       <Header />
-      <div id="content" className="space-y-4">
+      <div id="content" className="w-1/2 space-y-20 pt-10 text-left ml-8 mt-12">
         <ItemCard
           title="Programming Portfolio"
           description="My updated Programming portfolio displaying the various programming that I have done."

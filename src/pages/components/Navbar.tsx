@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="mr-4 mt-24">
+    <div className="mr-4 mt-24 pb-2">
       {/* flex space-x-2 border-t-neutral-900 px-2 py-3 justify-end pr-2 */}
       <button className="button-menu p-1 ">
         <Link href="/" className="color-white">
