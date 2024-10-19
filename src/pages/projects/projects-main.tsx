@@ -1,13 +1,12 @@
 import Header from "~/pages/components/Header";
 import ItemCard from "~/pages/components/ItemCard";
 
-import Link from "next/link";
 
 export default function projectsMain() {
   return (
-    <main>
+    <div>
       <Header />
-      <div id="content" className="w-1/2 space-y-20 pt-10 text-left ml-8 mt-12">
+      <div id="content" className="w-1/2 space-y-20 text-left mt-12 ml-20">
          <ItemCard
           title="Programming Portfolio"
           description="My updated Programming portfolio displaying the various programming that I have done."
@@ -21,7 +20,7 @@ export default function projectsMain() {
           repoLink="https://github.com/ljodiceendicott/CrowdWatch"
           pageLink="/"
         >
-          <Link href="/projects/crowdwatch/crowdwatch">Read More &gt;&gt;</Link>
+          {/* <Link href="/projects/crowdwatch/crowdwatch">Read More &gt;&gt;</Link> */}
         </ItemCard>
 
         <ItemCard
@@ -46,7 +45,7 @@ export default function projectsMain() {
           repoLink="https://github.com/ljodiceendicott/GitFast"
           pageLink="/"
         >
-          <Link href="/projects/gitfast/gitfast">Read More &gt;&gt;</Link>
+          {/* <Link href="/projects/gitfast/gitfast">Read More &gt;&gt;</Link> */}
         </ItemCard>
 
         <ItemCard
@@ -67,6 +66,6 @@ export default function projectsMain() {
           {/* Add Icons for Technology used */}
         </ItemCard>
       </div>
-    </main>
+    </div>
   );
 }

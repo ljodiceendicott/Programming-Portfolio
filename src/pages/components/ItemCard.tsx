@@ -26,7 +26,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
   return (
     <>
       <div className="">
-        <h1 className="text-2xl font-bold text-black">{title}</h1>
+        <h1 className="text-2xl font-extrabold text-black">{title}</h1>
         <h4 className="font-semibold text-slate-800">{company}</h4>
         <div className="flex-wrap text-black">{description}</div>
         <div className="flex-row text-right">{children}</div>

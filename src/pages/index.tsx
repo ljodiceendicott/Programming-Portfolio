@@ -6,6 +6,7 @@ import resume from "~/pages/resume.json";
 
 
 export default function Home() {
+  
   const cv = resume;
   return (
     <div className="overflow-hidden">

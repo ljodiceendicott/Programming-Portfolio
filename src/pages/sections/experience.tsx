@@ -9,7 +9,7 @@ export default function experience() {
   return (
     <div>
       <Header />
-      <div id="content" className="w-1/2 space-y-20 pt-10 text-left">
+      <div id="content" className="w-1/2 space-y-20 text-left mt-12">
         {jobs.map((job, index) => (
           <EmploymentCard
             key={index}
