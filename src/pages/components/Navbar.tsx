@@ -19,6 +19,11 @@ const Navbar = () => {
           Experiences
         </Link>
       </button>
+      <button className="button-menu p-1">
+        <Link href="/sections/articles" className="color-white">
+          Articles
+        </Link>
+      </button>
     </div>
   );
 };
