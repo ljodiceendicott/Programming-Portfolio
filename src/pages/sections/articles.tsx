@@ -7,8 +7,8 @@ export default function articles() {
 
 const articlelistjson = articlelist.data.viewer.latestPostsConnection.postPreviews;
 
-const unixtext = 1709699255403;
-let time = new Date(unixtext);
+// const unixtext = 1709699255403;
+// let time = new Date(unixtext);
 
   return (
     <div className="overflow-hidden">
