@@ -16,9 +16,9 @@ const article: React.FC<articleprops> = ({
   datePub
 }) => {
   return(
-    <div className="text-left ml-8 hover:font-extrabold">
-        <div className="text-2xl font-bold">{title}</div>
-        <div className="text-lg font-semibold">{subtitle}</div>
+    <div className="text-left ml-8 hover:text-slate-800 hover:cursor-pointer">
+        <div className="text-2xl font-semibold">{title}</div>
+        <div className="text-lg">{subtitle}</div>
         <div>Date Published: {datePub}</div>
     </div>
   )

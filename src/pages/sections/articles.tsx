@@ -11,16 +11,18 @@ const unixtext = 1709699255403;
 let time = new Date(unixtext);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
-      <div id="content" className="mt-12 w-1/2 space-y-20 text-left">
-        {/* This will need to use map as there will be multiple articles that this is pulling from*/}
-        {/* <Article 
-        article_url=""
-        title="Test Article"
-        subtitle="this is a test"
-        datePub= {time.toLocaleDateString()}
-              /> */}
+      <div className="pl-8 text-center pt-7 font-bold bg-slate-400">
+        <div className="text-3xl">Published Articles</div>
+        <div className="ml-11 mr-11 mt-3">These are all articles that I have written and published that talk about my development professionally and
+          as a way to document my thoughts and opinions as I have gone out into the "real world" during my time following being out of school
+        </div>
+      </div>
+      <div>
+
+      </div>
+      <div id="content" className="mt-12 mb-5 w-4/5 space-y-20 text-left">
         {articlelistjson.map((art, index) => (
           // Need to retrieve Post so it will be art.post
           <Article

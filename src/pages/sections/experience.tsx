@@ -7,7 +7,7 @@ export default function experience() {
   const jobs = Resume.experience;
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       <div id="content" className="w-1/2 space-y-20 text-left mt-12">
         {jobs.map((job, index) => (
