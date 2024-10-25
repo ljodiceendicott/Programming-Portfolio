@@ -17,9 +17,11 @@ const article: React.FC<articleprops> = ({
 }) => {
   return(
     <div className="text-left ml-8 hover:text-slate-800 hover:cursor-pointer">
+      <a href={article_url}>
         <div className="text-2xl font-semibold">{title}</div>
         <div className="text-lg">{subtitle}</div>
         <div>Date Published: {datePub}</div>
+      </a>
     </div>
   )
 };
