@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  overflow-x: hidden;
     --bg-rgb : #0E0B16;
     --button-color: #4717f6;
     --text-color : whitesmoke;
@@ -36,6 +37,7 @@
   
   .main-background{
     background-color: var(--bg-rgb);
+    color: white;
   }
 
   .col{

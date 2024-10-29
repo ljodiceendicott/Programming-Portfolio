@@ -1,4 +1,4 @@
-import Header from "~/pages/components/Header";
+import Page from "~/pages/components/page";
 import EmploymentCard from "../components/Employment-Card";
 
 import Resume from "../updated_resume.json";
@@ -7,8 +7,7 @@ export default function experience() {
   const jobs = Resume.experience;
 
   return (
-    <div className="overflow-hidden">
-      <Header />
+    <Page>
       <div id="content" className="w-1/2 space-y-20 text-left mt-12">
         {jobs.map((job, index) => (
           <EmploymentCard
@@ -22,6 +21,6 @@ export default function experience() {
         ))}
         {/* Will Soon systematically read in these values from Resume */}
       </div>
-    </div>
+    </Page>
   );
 }

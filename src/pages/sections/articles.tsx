@@ -1,4 +1,4 @@
-import Header from "~/pages/components/Header";
+import Page from "~/pages/components/page";
 
 import articlelist from "../combined_article.json";
 import Article from "../components/article";
@@ -11,12 +11,11 @@ const articlelistjson = articlelist.data.viewer.latestPostsConnection.postPrevie
 // let time = new Date(unixtext);
 
   return (
-    <div className="overflow-hidden">
-      <Header />
-      <div className="pl-8 text-center pt-7 font-bold bg-slate-400">
+      <Page>
+      <div className="pl-8 text-center pt-7 pb-5 font-bold bg-slate-400">
         <div className="text-3xl">Published Articles</div>
         <div className="ml-11 mr-11 mt-3">These are all articles that I have written and published that talk about my development professionally and
-          as a way to document my thoughts and opinions as I have gone out into the "real world" during my time following being out of school
+          as a way to document my thoughts and opinions as I have gone out into the "real world" during my time following graduating from Endicott College in 2023
         </div>
       </div>
       <div>
@@ -34,6 +33,6 @@ const articlelistjson = articlelist.data.viewer.latestPostsConnection.postPrevie
           />
         ))}
       </div>
-    </div>
+    </Page>
   );
 }

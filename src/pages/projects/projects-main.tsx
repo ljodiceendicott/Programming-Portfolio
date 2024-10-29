@@ -1,12 +1,18 @@
-import Header from "~/pages/components/Header";
 import ItemCard from "~/pages/components/ItemCard";
+import Page from "~/pages/components/page";
 
 
 export default function projectsMain() {
   return (
-    <div>
-      <Header />
-      <div id="content" className="w-1/2 space-y-20 text-left mt-12 ml-20">
+      <Page>
+      {/* Will need to make this dynamic */}
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/project/:projectId" element={<Project/>} />
+        </Routes>
+      </BrowserRouter> */}
+
+      <div id="content" className="w-3/4 space-y-20 text-left mt-12 ml-20">
          <ItemCard
           title="Programming Portfolio"
           description="My updated Programming portfolio displaying the various programming that I have done."
@@ -65,7 +71,7 @@ export default function projectsMain() {
         >
           {/* Add Icons for Technology used */}
         </ItemCard>
-      </div>
-    </div>
+        </div>
+        </Page>
   );
 }
