@@ -1,4 +1,4 @@
-import Page from "~/pages/components/page";
+import Page from "~/pages/components/Page";
 import EmploymentCard from "../components/Employment-Card";
 
 import Resume from "../updated_resume.json";

@@ -1,4 +1,4 @@
-import Page from "~/pages/components/page";
+import Page from "~/pages/components/Page";
 
 import articlelist from "../combined_article.json";
 import Article from "../components/article";
