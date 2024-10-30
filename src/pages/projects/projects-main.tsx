@@ -1,5 +1,5 @@
 import ItemCard from "~/pages/components/ItemCard";
-import Page from "~/pages/components/page";
+import Page from "~/pages/components/Page";
 
 
 export default function projectsMain() {
