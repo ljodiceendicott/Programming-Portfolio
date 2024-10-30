@@ -1,7 +1,7 @@
 import Page from "~/pages/components/Page";
 
-import articlelist from "../combined_article.json";
-import Article from "../components/article";
+import articlelist from "./combined_article.json";
+import Article from "./components/article";
 
 export default function articles() {
 

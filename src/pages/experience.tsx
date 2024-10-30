@@ -1,7 +1,7 @@
 import Page from "~/pages/components/Page";
-import EmploymentCard from "../components/Employment-Card";
+import EmploymentCard from "./components/Employment-Card";
 
-import Resume from "../updated_resume.json";
+import Resume from "./updated_resume.json";
 
 export default function experience() {
   const jobs = Resume.experience;

@@ -1,7 +1,6 @@
 import Header from "~/pages/components/Header";
-import PreviewCard from "./components/Preview-Card";
 
-import resume from "~/pages/resume.json";
+import resume from "~/pages/updated_resume.json";
 // Add the images from screenshots
 
 
@@ -27,7 +26,7 @@ export default function Home() {
           id="projects"
           className="columns-2 space-y-12 max-md:w-screen max-md:columns-1"
         >
-          {cv.projects.map((project, index) => (
+          {/* {cv.projects.map((project, index) => (
             <PreviewCard
               key={index}
               title={project.name}
@@ -36,7 +35,7 @@ export default function Home() {
               technologies={project.technologies}
               pageLink="/"
             ></PreviewCard>
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

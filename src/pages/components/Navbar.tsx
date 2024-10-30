@@ -10,17 +10,17 @@ const Navbar = () => {
         </Link>
       </button>
       <button className="button-menu p-1">
-        <Link href="/projects/projects-main" className="color-white">
+        <Link href="/projects" className="color-white">
           Projects
         </Link>
       </button>
       <button className="button-menu p-1">
-        <Link href="/sections/experience" className="color-white">
+        <Link href="/experience" className="color-white">
           Experiences
         </Link>
       </button>
       <button className="button-menu p-1">
-        <Link href="/sections/articles" className="color-white">
+        <Link href="/articles" className="color-white">
           Articles
         </Link>
       </button>
