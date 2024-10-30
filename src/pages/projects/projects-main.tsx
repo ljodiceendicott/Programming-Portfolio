@@ -1,5 +1,5 @@
-import ItemCard from "~/pages/components/ItemCard";
 import Page from "~/pages/components/Page";
+import ProgramCard from "~/pages/components/ProgramCard";
 
 
 export default function projectsMain() {
@@ -12,65 +12,59 @@ export default function projectsMain() {
         </Routes>
       </BrowserRouter> */}
 
-      <div id="content" className="w-3/4 space-y-20 text-left mt-12 ml-20">
-         <ItemCard
+      <div id="content" className="w-3/4 text-left mt-12 ml-20 space-y-20">
+         {/* This List will need to be modified to fit the projects that I am looking to show off */}
+         <ProgramCard
           title="Programming Portfolio"
-          description="My updated Programming portfolio displaying the various programming that I have done."
+          description="This is the code that is being used for this site"
           repoLink="https://github.com/ljodiceendicott/Programming-Portfolio"
-          pageLink="/"
-        ></ItemCard>
+          pageLink="/" technology={["Typescript | Tailwind CSS | "]}></ProgramCard>
 
-        <ItemCard
+        <ProgramCard
           title="CrowdWatch"
           description="A full stack solution to help inform business owners and customers of how busy a business is by displaying real time data as well as allowing the use of historical data. Also used for Senior Thesis at Endicott College"
           repoLink="https://github.com/ljodiceendicott/CrowdWatch"
-          pageLink="/"
-        >
+          pageLink="/" technology={[]} screenshotpath={""} id={""}        >
           {/* <Link href="/projects/crowdwatch/crowdwatch">Read More &gt;&gt;</Link> */}
-        </ItemCard>
+        </ProgramCard>
 
-        <ItemCard
+        <ProgramCard
           title="Learn to code Java"
           description="A collab project with entire class in a mock Software Engineering enviorment. A learn-to-code game that teaches programming in Java."
           repoLink="https://github.com/EndicottCollegeCSC/learn-to-code-java"
-          pageLink="/"
-        >
+          pageLink="/" technology={[]} screenshotpath={""} id={""}        >
           {/* Add Icons for Technology used */}
-        </ItemCard>
-        <ItemCard
+        </ProgramCard>
+        <ProgramCard
           title="Dijkstra's Algorithm - Java"
           description="This is a representation of the use of Dijkstra's Algorithm in Java"
           repoLink="https://github.com/ljodiceendicott/DjikstrasAlgorithm-Java"
-          pageLink="/"
-        >
+          pageLink="/" technology={[]} screenshotpath={""} id={""}        >
           {/* Add Icons for Technology used */}
-        </ItemCard>
-        <ItemCard
+        </ProgramCard>
+        <ProgramCard
           title="GitFast"
           description="Helps streamline the use of Git with a GUI for ease of use"
           repoLink="https://github.com/ljodiceendicott/GitFast"
-          pageLink="/"
-        >
+          pageLink="/" technology={[]} screenshotpath={""} id={""}        >
           {/* <Link href="/projects/gitfast/gitfast">Read More &gt;&gt;</Link> */}
-        </ItemCard>
+        </ProgramCard>
 
-        <ItemCard
+        <ProgramCard
           title="Musify"
           description="Clone of the webapp for the popular music streaming service Spotify"
           repoLink="https://github.com/ljodiceendicott/Musify"
-          pageLink="/"
-        >
+          pageLink="/" technology={[]} screenshotpath={""} id={""}        >
           {/* Add Icons for Technology used */}
-        </ItemCard>
+        </ProgramCard>
 
-        <ItemCard
+        <ProgramCard
           title="Patrick's Portfolio"
           description="Portfolio that was built for my friend Patrick Dunn to display his videos and photos"
           repoLink="https://github.com/ljodiceendicott/Patrick-Dunn-Portfolio"
-          pageLink="/"
-        >
+          pageLink="/" technology={[]} screenshotpath={""} id={""}        >
           {/* Add Icons for Technology used */}
-        </ItemCard>
+        </ProgramCard>
         </div>
         </Page>
   );
