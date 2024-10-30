@@ -3,7 +3,7 @@ import EmploymentCard from "./components/Employment-Card";
 
 import Resume from "./updated_resume.json";
 
-export default function experience() {
+export default function Experience() {
   const jobs = Resume.experience;
 
   return (
