@@ -17,10 +17,10 @@ export default function experience() {
         title="Scheduler"
         description="A tool that allows for full company scheduling and Querying where colleagues
 are located to help better assist with Management"
-        repoLink="https://github.com/ljodiceendicott/Scheduler-frontend"
-        repoLink2="https://github.com/ljodiceendicott/scheduler-backend"
+        Frontendlink="https://github.com/ljodiceendicott/Scheduler-frontend"
+        backendlink="https://github.com/ljodiceendicott/scheduler-backend"
         pageLink=""
-        technologies={[]}
+        technologies={["Python | Javascript"]}
       />
     </div>
   );

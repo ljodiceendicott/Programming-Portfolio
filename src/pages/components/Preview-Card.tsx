@@ -5,7 +5,7 @@ interface PreviewCardProps {
   title: string;
   company?: string;
   description: string;
-  repoLink: string;
+  repoLink?: string;
   repoLink2?: string;
   Frontendlink?: string;
   backendlink?: string;
@@ -27,36 +27,53 @@ const ItemCard: React.FC<PreviewCardProps> = ({
   technologies,
   repoLink,
   repoLink2,
+  Frontendlink,
+  backendlink,
   pageLink,
 }) => {
   return (
     <>
-      <div className="preview-card h-fit bg-slate-600 text-white">
-        <h1 className="pb-2 text-2xl font-bold">{title}</h1>
-        <div id="techcontainer" className="flex justify-center space-x-3 pb-3">
+      <div className="preview-card h-auto overflow-auto bg-slate-600 text-white">
+        <h1 className="text-2xl font-bold">{title}</h1>
+        <div id="techcontainer" className="flex justify-center space-x-3">
           {technologies}
         </div>
         <div className="flex-row">{children}</div>
         <h4 className="font-semibold">{company}</h4>
         <div className="flex-wrap">{description}</div>
-        <div className="text-left font-semibold">
-          <a
-            className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
-            href={repoLink}
-          >
-            Link to Github Repo
-          </a>
-          <br />
-          { pageLink ?
-          <a
-            className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
-            href={pageLink}
-          >
-            Read more on this project
-          </a>
-          : null
-          }
+          <br/>
+          {repoLink && pageLink ? (
+            <div className="text-left font-semibold">
+            <a
+              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
+              href={repoLink}
+            >
+              Link to Github Repo
+            </a>
+            <br/>
+            <a
+              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
+              href={pageLink}
+            >
+              Read more on this project
+            </a>
+            </div>
+          ) :  <div className="text-left font-semibold">
+            <a
+              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
+              href={Frontendlink}
+            >
+              Link to Github Repo for Frontend
+            </a>
+          <br/>
+            <a
+              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
+              href={backendlink}
+            >
+              Link to Github Repo for Backend
+            </a>
         </div>
+          }
       </div>
     </>
   );
