@@ -1,3 +1,4 @@
+
 /** @type {import("eslint").Linter.Config} */
 const config = {
   parser: "@typescript-eslint/parser",
@@ -16,6 +17,9 @@ const config = {
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-unsafe-argument" : "off",
     "@next/next/no-page-custom-font": "off",
     "@typescript-eslint/consistent-type-imports": [
       "warn",
