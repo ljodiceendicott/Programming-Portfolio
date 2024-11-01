@@ -1,100 +1,99 @@
+import { useEffect, useState } from "react";
 import Page from "~/pages/components/Page";
-import ProgramCard from "~/pages/components/ProgramCard";
+import ProgramCards from "~/pages/components/ProgramCard";
 
+
+interface ProgramCardData {
+  className?: string;
+  children?: React.ReactNode;
+  title: string;
+  description: string;
+  repoLink: string;
+  liveLink?: string;
+  pageLink?: string;
+  technology?: string;
+  screenshotpath?: string;
+  lastUpdated?: string;
+  id?: string;
+}
+
+// var repos: ProgramCarddata[] = []
 
 export default function projectsMain() {
+  const [repos, setData] = useState<ProgramCardData[]>([]);;
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  
+  useEffect(() => {
+    fetch("https://api.github.com/users/ljodiceendicott/repos?per_page=100") // replace with your API endpoint
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        const mappedRepos = data
+          .map((repo: any) => ({
+            title: repo.name,
+            description: repo.description || "",
+            repoLink: repo.html_url,
+            technology: repo.language,
+            lastUpdated: repo.pushed_at,
+          }))
+          .sort(
+            (a: any, b: any) =>
+              new Date(b.lastUpdated).getTime() -
+              new Date(a.lastUpdated).getTime()
+          );
+        setData(mappedRepos);
+        setLoading(false);
+        console.log("Data found!");
+        console.log(mappedRepos);
+        // })
+        // .catch((error) => {
+        //   setError(error);
+        //   setLoading(false);
+      });
+  }, []); // Empty dependency array means this effect runs once on mount
+
+
   return (
     <Page>
-      {/* Will need to make this dynamic */}
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/project/:projectId" element={<Project/>} />
-        </Routes>
-      </BrowserRouter> */}
+      <div className="text-center text-2xl font-bold text-slate-950">
+        Here are some of the projects that I have been working on:
+      </div>
+      <div className="text-center text-lg font-semibold ml-12 mr-12 mt-2">
+        At this time, I am working on getting the descriptions added, Please
+        feel free to click on the repository names and explore all of these
+        projects found on GitHub!
+      </div>
+      <div
+        id="content"
+        className="ml-20 mt-12 w-3/4 justify-items-start space-y-20 text-left"
+      >
+        {/* This List will need to be modified to fit the projects that I am looking to show off*/}
 
-      {/* I would like to retrieve these projects live from my github and display all of the repos that I have as public
-    This will use the format that is found in the json file of "github_endpoint.json" and use the endpoint of "https://api.github.com/users/ljodiceendicott/repos" which is a publicly facing endpoint
-*/}
-
-      <div id="content" className="ml-20 mt-12 w-3/4 space-y-20 text-left">
-        {/* This List will need to be modified to fit the projects that I am looking to show off */}
-        <ProgramCard
-          title="Programming Portfolio"
-          description="This is the code that is being used for this site"
-          repoLink="https://github.com/ljodiceendicott/Programming-Portfolio"
-          pageLink="/"
-          technology={["Typescript | Tailwind CSS | "]}
-        ></ProgramCard>
-
-        <ProgramCard
-          title="CrowdWatch"
-          description="A full stack solution to help inform business owners and customers of how busy a business is by displaying real time data as well as allowing the use of historical data. Also used for Senior Thesis at Endicott College"
-          repoLink="https://github.com/ljodiceendicott/CrowdWatch"
-          pageLink="/"
-          technology={[]}
-          screenshotpath={""}
-          id={""}
-        >
-          {/* <Link href="/projects/crowdwatch/crowdwatch">Read More &gt;&gt;</Link> */}
-        </ProgramCard>
-
-        <ProgramCard
-          title="Learn to code Java"
-          description="A collab project with entire class in a mock Software Engineering enviorment. A learn-to-code game that teaches programming in Java."
-          repoLink="https://github.com/EndicottCollegeCSC/learn-to-code-java"
-          pageLink="/"
-          technology={[]}
-          screenshotpath={""}
-          id={""}
-        >
-          {/* Add Icons for Technology used */}
-        </ProgramCard>
-        <ProgramCard
-          title="Dijkstra's Algorithm - Java"
-          description="This is a representation of the use of Dijkstra's Algorithm in Java"
-          repoLink="https://github.com/ljodiceendicott/DjikstrasAlgorithm-Java"
-          pageLink="/"
-          technology={[]}
-          screenshotpath={""}
-          id={""}
-        >
-          {/* Add Icons for Technology used */}
-        </ProgramCard>
-        <ProgramCard
-          title="GitFast"
-          description="Helps streamline the use of Git with a GUI for ease of use"
-          repoLink="https://github.com/ljodiceendicott/GitFast"
-          pageLink="/"
-          technology={[]}
-          screenshotpath={""}
-          id={""}
-        >
-          {/* <Link href="/projects/gitfast/gitfast">Read More &gt;&gt;</Link> */}
-        </ProgramCard>
-
-        <ProgramCard
-          title="Musify"
-          description="Clone of the webapp for the popular music streaming service Spotify"
-          repoLink="https://github.com/ljodiceendicott/Musify"
-          pageLink="/"
-          technology={[]}
-          screenshotpath={""}
-          id={""}
-        >
-          {/* Add Icons for Technology used */}
-        </ProgramCard>
-
-        <ProgramCard
-          title="Patrick's Portfolio"
-          description="Portfolio that was built for my friend Patrick Dunn to display his videos and photos"
-          repoLink="https://github.com/ljodiceendicott/Patrick-Dunn-Portfolio"
-          pageLink="/"
-          technology={[]}
-          screenshotpath={""}
-          id={""}
-        >
-          {/* Add Icons for Technology used */}
-        </ProgramCard>
+        {/* 
+        Usage example
+        
+        <ProgramCards
+          title={githubendpoint.name}
+          description={githubendpoint.description}
+          repoLink={githubendpoint.html_url}
+          technology={githubendpoint.language.replace(",", " | ").toString()}
+        > */}
+        {/* Created at {githubendpoint.created_at} */}
+        {/* </ProgramCards> */}
+        {repos.map((repo, index) => (
+          <ProgramCards
+            key={index}
+            title={repo.title}
+            description={repo.description}
+            repoLink={repo.repoLink}
+            technology={repo.technology}
+          ></ProgramCards>
+        ))}
       </div>
     </Page>
   );
