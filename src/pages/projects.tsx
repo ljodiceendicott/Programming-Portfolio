@@ -19,7 +19,7 @@ interface ProgramCardData {
 
 // var repos: ProgramCarddata[] = []
 
-export default function projectsMain() {
+export default function ProjectsMain() {
   const [repos, setData] = useState<ProgramCardData[]>([]);;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
