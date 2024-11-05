@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 25%;
+  }
+
+  100% {
+    background-position: 100% 75%;
+  }
+}
+
 :root {
   overflow-x: hidden;
     --bg-rgb : #0E0B16;
@@ -17,16 +27,18 @@
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E0E0F0", endColorstr="#ffffff", GradientType=1);
   }
   .background-coloring{
-    /* background: hsla(240, 35%, 91%, 1); */
-    
+    /* background: hsla(240, 35%, 91%, 1); */    
       background: linear-gradient(360deg, hsla(240, 35%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 9%, hsla(0, 0%, 100%, 1) 73%, hsla(0, 0%, 88%, 1) 100%);
     
       background: -moz-linear-gradient(360deg, hsla(240, 35%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 9%, hsla(0, 0%, 100%, 1) 73%, hsla(0, 0%, 88%, 1) 100%);
     
       background: -webkit-linear-gradient(360deg, hsla(240, 35%, 91%, 1) 0%, hsla(0, 0%, 100%, 1) 9%, hsla(0, 0%, 100%, 1) 73%, hsla(0, 0%, 88%, 1) 100%);
     
-      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E0E0F0", endColorstr="#ffffff", GradientType=1);
-  }
+      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E0E0F0", endColorstr="#ffffff", GradientType=1); 
+        /* Light gray base */
+          background-image: radial-gradient(circle, rgba(0, 0, 0, 0.02) 1px, rgba(0, 0, 0, 0) 1px);
+          background-size: 4px 4px;
+    }
   .button-menu{
     background-color: var(--bg-rgb);
     border-radius: 5px;

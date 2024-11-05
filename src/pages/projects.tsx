@@ -60,7 +60,7 @@ export default function ProjectsMain() {
 
   return (
     <Page>
-      <div className="text-center text-2xl font-bold text-slate-950">
+      <div className="text-center text-2xl font-bold text-slate-950 pt-3">
         Here are some of the projects that I have been working on:
       </div>
       <div className="text-center text-lg font-semibold ml-12 mr-12 mt-2">

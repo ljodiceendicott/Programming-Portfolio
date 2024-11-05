@@ -9,7 +9,7 @@ interface PageProps {
 
 const Page: React.FC<PageProps> = ({ className, children}) => {
   return (
-<div>
+<div className="background-coloring">
 <Header/>
 {children}
 <Footer/>

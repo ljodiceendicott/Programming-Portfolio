@@ -1,5 +1,5 @@
-
 import Link from "next/link";
+import CurrentJob from "~/pages/sections/currentjob";
 import ProjectShowcase from "~/pages/sections/projectshowcase";
 import resume from "~/pages/updated_resume.json";
 import Page from "./components/Page";
@@ -38,6 +38,13 @@ export default function Home() {
           className="columns-2 space-y-12 max-md:w-screen max-md:columns-1"
         >
           <ProjectShowcase />
+        </div>
+        <Link href="/experience" className="hover:hover:text-blue-800">
+          <h2 className="my-9 pl-4 text-left text-4xl font-bold">Experience</h2>
+        </Link>
+        <div>This is my current position and what this entails me doing</div>
+        <div id="expierience">
+          <CurrentJob></CurrentJob>
         </div>
       </div>
     </Page>
