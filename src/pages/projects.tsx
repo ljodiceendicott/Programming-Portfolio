@@ -25,7 +25,7 @@ export default function ProjectsMain() {
   const [error, setError] = useState(null);
   
   useEffect(() => {
-    fetch("https://api.github.com/users/ljodiceendicott/repos?per_page=100") // replace with your API endpoint
+    fetch("https://api.github.com/users/ljodiceendicott/repos?per_page=40") // replace with your API endpoint
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -73,6 +73,8 @@ export default function ProjectsMain() {
         className="ml-20 mt-12 w-3/4 justify-items-start space-y-20 text-left"
       >
         {/* This List will need to be modified to fit the projects that I am looking to show off*/}
+
+        {loading ? <div>One moment while retrieving projects from Github</div>: null}
 
         {/* 
         Usage example

@@ -15,7 +15,7 @@ export default function Experience() {
             title={job.position}
             company={job.company}
             description={job.job_responsibilities}
-            keyparts={job.key_parts_of_job.toString()}
+            keyparts={job.key_parts_of_job}
             timeframe={job.date}
           ></EmploymentCard>
         ))}
