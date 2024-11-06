@@ -70,9 +70,9 @@ const keyparts_format = (keyparts || []).map((part, i) => (
         {start} {end}
         <br/><br/>
         <ul id="description list" className="space-y-3">
-    {description.map((art, index) => (
+    {description ? description.map((art, index) => (
       <li key={index}>&gt; {art}</li>
-    ))}
+    )): null}
           {/* <li>{description[0]}</li>
           <li>{description[1]}</li>
           <li>{description[2]}</li>
