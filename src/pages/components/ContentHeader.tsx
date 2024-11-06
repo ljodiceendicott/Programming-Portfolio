@@ -1,16 +1,12 @@
 import React from "react";
 
 interface ContentProps {
-  className?: string;
-  children?: React.ReactNode;
   name: string;
   technologies: string;
   description: string;
 }
 
 const ContentHeader: React.FC<ContentProps> = ({
-  className,
-  children,
   name,
   technologies,
   description,

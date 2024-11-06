@@ -45,7 +45,6 @@ have provided, works for my use-case.
 // //   i++;
 // });
 // });
-  const desc = description;
   var keyparts_format = "";
   for(var i = 0; i<keyparts.length; i++){
     if(i-1==keyparts.length){
@@ -69,7 +68,7 @@ have provided, works for my use-case.
         <br/><br/>
         <ul id="description list" className="space-y-3">
     {description.map((art, index) => (
-      <li>&gt; {art}</li>
+      <li key={index}>&gt; {art}</li>
     ))}
           {/* <li>{description[0]}</li>
           <li>{description[1]}</li>
