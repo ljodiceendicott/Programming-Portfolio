@@ -45,22 +45,25 @@ have provided, works for my use-case.
 // //   i++;
 // });
 // });
-  let keyparts_format = "";
-  for(let i = 0; i<keyparts.length; i++){
-    if(i-1===keyparts.length){
-      keyparts_format = keyparts_format + keyparts[i];
-    }
-    else{
-      keyparts_format = keyparts_format + keyparts[i]+" | ";
-    }
-  }
+  // for(let i = 0; i<keyparts.length; i++){
+  //   if(i-1===keyparts.length){
+  //     keyparts_format = keyparts_format + keyparts[i];
+  //   }
+  //   else{
+  //     keyparts_format = keyparts_format + keyparts[i]+" | ";
+  //   }
+  // }
+const keyparts_format = (keyparts || []).map((part, i) => (
+  i === keyparts.length - 1 ? part : part + " - "
+)).join('');
+
 
   return (
     <div className="text-left -mr-56 ml-20 mt-6">
       <div className="text-2xl font-extrabold">{title}</div>
       <div className="text-l">
         <div className="text-xl font-bold">{company}</div>
-        <div className="py-2">|&nbsp; 
+        <div className="py-2">&nbsp; 
           {keyparts_format}      
         </div>
         {timeframe}
