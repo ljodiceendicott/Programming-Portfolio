@@ -45,7 +45,7 @@ have provided, works for my use-case.
 // //   i++;
 // });
 // });
-  var keyparts_format = "";
+  let keyparts_format = "";
   for(var i = 0; i<keyparts.length; i++){
     if(i-1==keyparts.length){
       keyparts_format = keyparts_format + keyparts[i];
