@@ -25,7 +25,9 @@ export default function ProjectsMain() {
   const [error, setError] = useState(null);
   
   useEffect(() => {
-    fetch("https://api.github.com/users/ljodiceendicott/repos?per_page=40") // replace with your API endpoint
+    fetch(
+      "https://api.github.com/users/ljodiceendicott/repos?sort=updated&per_page=20"
+    ) // replace with your API endpoint
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
