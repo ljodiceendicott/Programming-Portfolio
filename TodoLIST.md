@@ -9,8 +9,8 @@
     [ ] - Show Top 3 projects I am proud of then "See More >>" to that page
 
 ### General:
-    [ ] - change the flavicon
-    [ ] - Possible transitions
+    <!-- [ ] - change the flavicon -->
+    <!-- [ ] - Possible transitions -->
     [ ] - build projects ;)
 
 ### Nav/Top of Page:
@@ -23,3 +23,9 @@
         [ ] - Summary/Synopsis and Title
         [ ] - Formatting of ths article displays ( May require a new element )
     [ ] - Link to Medium to view the articles
+
+### showcasing skill
+    [ ] - adding a self contained thing
+    [ ] - possibly including a segment that will interact with a QB app
+            - This could be a comment secton
+            - or a reachout thing

@@ -1,7 +1,7 @@
 "use client";
 
-import Github from "~/photos/icons8-github-50.png";
-import Linkedin from "~/photos/icons8-linkedin-50.png";
+import Github from "~/photos/github-mark.png";
+import Linkedin from "~/photos/InBug-Black.png";
 
 import Navbar from "~/pages/components/Navbar";
 
