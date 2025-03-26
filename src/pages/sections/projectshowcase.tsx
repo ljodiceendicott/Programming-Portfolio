@@ -3,7 +3,7 @@ import PreviewCard from "../components/Preview-Card";
 export default function experience() {
 
   return (
-    <div className="flex space-x-4 -mr-72">
+    <div className="flex space-x-4">
       {/* This is the showcase of the projects that I will be looking to show off */}
       {/* Will Soon systematically read in these values from Resume */}
       <PreviewCard

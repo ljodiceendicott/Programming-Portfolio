@@ -13,7 +13,7 @@ export default function Home() {
     <Page>
       <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mt-16 text-black bg-clip-text text-4xl font-bold text-transparent sm:text-5xl">
+          <h1 className="mt-14 text-black text-4xl font-bold sm:text-5xl">
             Hello
           </h1>
           
@@ -30,7 +30,7 @@ export default function Home() {
             </p>
           </div>
 
-          <section className="mt-16">
+          <section className="mt-14">
             <Link 
               href="/projects" 
               className="group inline-flex w-full items-center justify-between rounded-lg bg-white p-4 shadow-sm transition-all hover:shadow-md sm:w-auto"
@@ -48,7 +48,7 @@ export default function Home() {
               </svg>
             </Link>
 
-            <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-2 -mr-96 r3">
+            <div className="mt-8 mx-auto container px-4 sm:px-6 lg:px-8">
               <ProjectShowcase />
             </div>
           </section>
@@ -72,8 +72,8 @@ export default function Home() {
             </Link>
 
             <div className="mt-8 rounded-lg bg-white p-6 shadow-sm">
-              <p className="mb-6 text-lg text-gray-600">
-                This is my current position and what this entails me doing
+              <p className="mb-6 text-lg text-left text-gray-600 font-bold">
+                My current position:
               </p>
               <CurrentJob />
             </div>

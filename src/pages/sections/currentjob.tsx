@@ -11,9 +11,9 @@ export default function currentjob() {
     return (
     <div className="preview-card h-auto overflow-auto bg-slate-600 text-white">
         <h1 className="text-2xl font-bold">Quickbase Tier 1 Technical Support Representative</h1> <br/>
-            <ul className="text-left">
+            <ul className="text-left space-y-4">
             {jobdesc.map((action,idx) => 
-            <li key={idx}>{action}</li>
+            <li key={idx} className=" pl-4">{action}</li>
             )}
             </ul>
             </div>

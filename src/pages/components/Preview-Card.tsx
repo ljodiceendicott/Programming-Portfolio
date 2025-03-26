@@ -33,7 +33,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
 }) => {
   return (
     <>
-      <div className="preview-card h-auto overflow-auto bg-slate-600 text-white">
+      <div className="preview-card h-auto overflow-auto bg-slate-100 text-black">
         <h1 className="text-2xl font-bold">{title}</h1>
         <div id="techcontainer" className="flex justify-center space-x-3">
           {technologies}
