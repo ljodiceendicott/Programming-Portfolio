@@ -14,7 +14,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <div className="main-background flex w-screen items-center justify-between text-white">
-      <div className="py-2.5 pl-6">
+      <div className="pl-6">
         <h1 className="text-3xl">Luke Jodice</h1>
         <h2 className="text-md">Software Engineer</h2>
         <div className="flex items-center space-x-1">

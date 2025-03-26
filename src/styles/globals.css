@@ -90,6 +90,7 @@ body {
   color: white;
   padding: var(--spacing-sm) var(--spacing-md);
   transition: all 0.2s ease-in-out;
+  font-size: small;
 }
 .button-menu:hover {
   background-color: var(--color-primary-dark);
