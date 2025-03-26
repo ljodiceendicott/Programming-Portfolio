@@ -73,7 +73,7 @@ export default function ProjectsMain() {
             </p>
           </header>
 
-          <main className="mt-12">
+          <main className="mt-20">
             {loading ? (
               <div className="flex min-h-[200px] items-center justify-center rounded-lg bg-white p-8 shadow-sm">
                 <div className="flex items-center space-x-3 text-gray-600">
@@ -85,7 +85,7 @@ export default function ProjectsMain() {
                 </div>
               </div>
             ) : (
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-4 grid gap-8 gap-y-20 sm:grid-cols-2 lg:grid-cols-3">
                 {repos.map((repo, index) => (
                   <ProgramCards
                     key={index}
