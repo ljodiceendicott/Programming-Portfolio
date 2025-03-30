@@ -1,4 +1,3 @@
-
 interface EmploymentCardProps {
   className?: string;
   children?: React.ReactNode;
@@ -20,66 +19,52 @@ const EmploymentCard: React.FC<EmploymentCardProps> = ({
   start,
   end,
 }) => {
-/*
-This is a failure as I have attempted to make a smart rendering of the job description when I know
-that all of the items will not exceed 4 items. I then decided to render them using the array syntax
-as this is how they are being read in by a json file.
-Eventually I would like to have this be pulled from an API but I believe that the solution that I
-have provided, works for my use-case.
-*/
-//   const bullet_items: string[] = description.split(',');
-//   console.log(bullet_items);
-// console.log(description)
-// useEffect(() =>{ 
-//   const ul = document.getElementById("description list") as HTMLElement;
-
-//   var i = 1;
-//   description.forEach(item => {
-//   if(i>3){
-//     return false;
-//   }
-//   const li = document.createElement('li');
-//   li.textContent = item;
-//   ul.appendChild(li);
-//   console.log(i);
-// //   i++;
-// });
-// });
-  // for(let i = 0; i<keyparts.length; i++){
-  //   if(i-1===keyparts.length){
-  //     keyparts_format = keyparts_format + keyparts[i];
-  //   }
-  //   else{
-  //     keyparts_format = keyparts_format + keyparts[i]+" | ";
-  //   }
-  // }
-const keyparts_format = (keyparts || []).map((part, i) => (
-  i === keyparts.length - 1 ? part : part + " - "
-)).join('');
-
+  const keyparts_format = (keyparts || []).map((part, i) => (
+    i === keyparts.length - 1 ? part : part + " • "
+  )).join('');
 
   return (
-    <div className="text-left -mr-56 ml-20 mt-6">
-      <div className="text-2xl font-extrabold">{title}</div>
-      <div className="text-l">
-        <div className="text-xl font-bold">{company}</div>
-        <div className="py-2">&nbsp; 
-          {keyparts_format}      
+    <div className="rounded-xl bg-white p-6 shadow-sm transition-all hover:shadow-md">
+      <div className="space-y-4">
+        {/* Header section */}
+        <div className="border-b border-gray-100 pb-4">
+          <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
+          <div className="mt-2 flex flex-wrap items-center gap-2 text-gray-600">
+            <span className="font-medium">{company}</span>
+            <span className="text-gray-300">•</span>
+            <span className="text-sm text-gray-500">{timeframe}</span>
+          </div>
         </div>
-        {timeframe}
-        {start} {end}
-        <br/><br/>
-        <ul id="description list" className="space-y-3">
-    {description ? description.map((art, index) => (
-      <li key={index}>&gt; {art}</li>
-    )): null}
-          {/* <li>{description[0]}</li>
-          <li>{description[1]}</li>
-          <li>{description[2]}</li>
-          <li>{description[3]}</li> */}
+
+        {/* Key parts section */}
+        <div className="rounded-lg bg-gray-50 px-4 py-3 text-sm text-gray-600">
+          {keyparts_format}
+        </div>
+
+        {/* Description list */}
+        <ul className="space-y-3 text-gray-600">
+          {description?.map((item, index) => (
+            <li key={index} className="flex items-start">
+              <svg 
+                className="mr-2 mt-1.5 h-4 w-4 flex-shrink-0 text-primary" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              <span className="leading-relaxed">{item}</span>
+            </li>
+          ))}
         </ul>
-        </div>
+      </div>
     </div>
   );
 };
+
 export default EmploymentCard;
