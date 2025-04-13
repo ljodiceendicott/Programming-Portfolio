@@ -42,7 +42,7 @@ yarn-error.log*
 *.tsbuildinfo
 
 # Prisma
-generated/
+generated/prisma
 prisma/.env
 *.db
 *.db-journal
