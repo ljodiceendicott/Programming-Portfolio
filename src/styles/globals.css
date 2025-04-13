@@ -13,7 +13,7 @@
 }
 
 :root {
-  /* Modern color palette */
+  /* Light mode color palette */
   --color-primary: #5A5A5A;        /* Neutral gray for primary actions */
   --color-primary-dark: #3D3D3D;    /* Darker gray for hover/focus states */
   --color-background: #FFFFFF;      /* Pure white (kept for accessibility) */
@@ -50,6 +50,22 @@
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#E0E0F0", endColorstr="#ffffff", GradientType=1);
 }
 
+:root.dark {
+  /* Dark mode color palette */
+  --color-primary: #A0A0A0;
+  --color-primary-dark: #808080;
+  --color-background: #1A1A1A;
+  --color-surface: #2D2D2D;
+  --color-text: #E0E0E0;
+  --color-text-light: #B0B0B0;
+  --color-accent: #909090;
+  
+  /* Dark mode shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+}
+
 /* Base styles */
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -57,6 +73,7 @@ body {
   color: var(--color-text);
   line-height: 1.5;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .background-coloring {
@@ -66,6 +83,7 @@ body {
     var(--color-surface) 100%
   );
   position: relative;
+  transition: background 0.3s ease;
 }
 
 .background-coloring::before {
@@ -83,11 +101,20 @@ body {
   background-size: 24px 24px;
   opacity: 0.5;
   pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.dark .background-coloring::before {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
 }
 
 .button-menu {
   background-color: var(--color-text-light);
-  color: white;
+  color: var(--color-background);
   padding: var(--spacing-sm) var(--spacing-md);
   transition: all 0.2s ease-in-out;
   font-size: small;
@@ -109,6 +136,7 @@ body {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   padding: var(--spacing-lg);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Modern Grid Layout */
@@ -157,4 +185,23 @@ rig{
   content: "";
   display: table;
   clear: both;
+}
+
+/* Dark mode specific styles */
+.dark body {
+  background: linear-gradient(360deg, #1a1a1a 0%, #2d2d2d 9%, #2d2d2d 73%, #1a1a1a 100%);
+}
+
+.dark .main-background {
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.dark .button-menu {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.dark .button-menu:hover {
+  background-color: var(--color-primary-dark);
 }
