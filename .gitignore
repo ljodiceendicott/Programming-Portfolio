@@ -40,3 +40,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Prisma
+generated/
+prisma/.env
+*.db
+*.db-journal
