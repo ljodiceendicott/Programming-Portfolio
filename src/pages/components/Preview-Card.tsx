@@ -1,4 +1,3 @@
-
 interface PreviewCardProps {
   className?: string;
   children?: React.ReactNode;
@@ -29,6 +28,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
   repoLink2,
   Frontendlink,
   backendlink,
+  liveLink,
   pageLink,
 }) => {
   return (
@@ -41,41 +41,60 @@ const ItemCard: React.FC<PreviewCardProps> = ({
         <div className="flex-row">{children}</div>
         <h4 className="font-semibold">{company}</h4>
         <div className="flex-wrap">{description}</div>
-          <br/>
-          {repoLink && pageLink ? (
-            <div className="text-left font-semibold">
+        <br />
+        {repoLink && pageLink ? (
+          <div className="text-left font-semibold">
             <a
-              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
+              className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
               href={repoLink}
             >
               Link to Github Repo
             </a>
-            <br/>
+            <br />
             <a
-              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
+              className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
               href={pageLink}
             >
               Read more on this project
             </a>
-            </div>
-          ) :  <div className="text-left font-semibold">
-            <a
-              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
-              href={Frontendlink}
-            >
-              Link to Github Repo for Frontend
-            </a>
-          <br/>
-            <a
-              className=" hover:cursor-pointer hover:font-bold hover:text-blue-900"
-              href={backendlink}
-            >
-              Link to Github Repo for Backend
-            </a>
+          </div>
+        ) : liveLink ? (
+          <div className="text-left font-semibold">
+          <a
+            className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
+            href={liveLink}
+          >
+            Link to Live host
+          </a>
+          <br />
+          <a
+            className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
+            href={repoLink}
+          >
+            Link to Github Repo
+          </a>
         </div>
-          }
+        
+        ) : (
+          <div className="text-left font-semibold">
+          <a
+            className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
+            href={Frontendlink}
+          >
+            Link to Github Repo for Frontend
+          </a>
+          <br />
+          <a
+            className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
+            href={backendlink}
+          >
+            Link to Github Repo for Backend
+          </a>
+        </div>
+        )}
       </div>
     </>
   );
-};
+}
+
 export default ItemCard;

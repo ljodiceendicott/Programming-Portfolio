@@ -14,13 +14,11 @@ export default function experience() {
         technologies={["Javascript | Python | HTML/CSS | Arduino C++"]}
       />
       <PreviewCard
-        title="Scheduler"
-        description="A tool that allows for full company scheduling and Querying where colleagues
-are located to help better assist with Management"
-        Frontendlink="https://github.com/ljodiceendicott/Scheduler-frontend"
-        backendlink="https://github.com/ljodiceendicott/scheduler-backend"
-        pageLink=""
-        technologies={["Python | Javascript"]}
+        title="Trivily"
+        description="Chronological Historical Event Puzzle Game. Allows for historical knowledge to be checked daily and be able to share your score with your friends"
+        repoLink="https://github.com/ljodiceendicott/Trivily"
+        liveLink="https://trivily.vercel.app/" //Adding link to web hosted on vercel
+        technologies={["Typescript | Next.js | Postgres"]}
       />
     </div>
   );
