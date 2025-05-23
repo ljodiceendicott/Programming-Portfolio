@@ -111,19 +111,19 @@
             "position": "Technical Support Representative",
             "company": "Quickbase",
             "date": "December 2023 - Current",
-            "key_parts_of_job": [
-                "Troubleshooting",
-                "Documentation",
-                "Client Communication"
-            ],
-            "job_responsibilities":[
-                "Provided efficient and effective technical support via phone, email, and chat for Quickbase users",
-                "Resolved customer inquiries and issues related to the Quickbase platform, ensuring high levels of customer satisfaction.",
-                "Documented and tracked customer interactions, problems, and resolutions in the support system.",
-                "Collaborated with cross functional teams to handle escalated and complex issues.",
-                "Educated customers on product features, functionality, and best practices to enhance their user experience.",
-                "Kept up-to-date with product updates, new features, and industry trends."
-            ]
+           "key_parts_of_job": [
+        "Troubleshooting",
+        "Documentation",
+        "Splunk"
+    ],
+    "job_responsibilities": [
+        "Consistently resolved 200+ technical cases/month (top 3 rep on team for 10+ consecutive months) via phone, email, and chat—troubleshooting workflows, integrations, and user permissions with an 80%+ first-contact resolution rate.",
+        "Achieved 90%+ CSAT by resolving complex platform issues (formula errors, API integrations, data management) with accurate, timely solutions.",
+        "Reduced diagnostic time by 50%+ by leveraging Splunk log analysis to pinpoint root causes of system errors, API failures, and performance bottlenecks.",
+        "Minimized customer downtime during releases by staying ahead of product updates and trends, enabling proactive support and training.",
+        "Documented and tracked customer interactions, problems, and resolutions in the support system to improve knowledge base accuracy.",
+        "Collaborated with cross-functional teams to escalate and resolve critical technical issues efficiently."
+    ]
         },
         {
             "position": "Freelance Software Developer",

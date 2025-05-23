@@ -49,6 +49,9 @@ export default function Home() {
             </Link>
 
             <div className="mt-8 mx-auto container px-4 sm:px-6 lg:px-8">
+            <p className="mb-2 text-lg text-left text-gray-600 font-bold">
+               Some Notable Projects:
+              </p>
               <ProjectShowcase />
             </div>
           </section>
@@ -71,7 +74,7 @@ export default function Home() {
               </svg>
             </Link>
 
-            <div className="mt-8 rounded-lg bg-white p-6 shadow-sm">
+            <div className="mt-8 rounded-lg p-6 shadow-sm text-left">
               <p className="mb-6 text-lg text-left text-gray-600 font-bold">
                 My current position:
               </p>

@@ -33,7 +33,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
 }) => {
   return (
     <>
-      <div className="preview-card h-auto overflow-auto bg-slate-100 text-black">
+      <div className="preview-card h-auto overflow-auto bg-white text-black">
         <h1 className="text-2xl font-bold">{title}</h1>
         <div id="techcontainer" className="flex justify-center space-x-3">
           {technologies}
@@ -43,7 +43,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
         <div className="flex-wrap">{description}</div>
         <br />
         {repoLink && pageLink ? (
-          <div className="text-left font-semibold">
+          <div className=" font-semibold">
             <a
               className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
               href={repoLink}
@@ -59,7 +59,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
             </a>
           </div>
         ) : liveLink ? (
-          <div className="text-left font-semibold">
+          <div className=" font-semibold">
           <a
             className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
             href={liveLink}
@@ -75,7 +75,7 @@ const ItemCard: React.FC<PreviewCardProps> = ({
           </a>
         </div>
         
-        ) : (
+        ) : Frontendlink && backendlink ?(
           <div className="text-left font-semibold">
           <a
             className="hover:cursor-pointer hover:font-bold hover:text-blue-900"
@@ -91,7 +91,16 @@ const ItemCard: React.FC<PreviewCardProps> = ({
             Link to Github Repo for Backend
           </a>
         </div>
-        )}
+        ) : 
+        (
+          <a
+          className="hover:cursor-pointer hover:font-bold hover:text-blue-900 font-semibold"
+          href={repoLink}
+        >
+          Link to Github Repo
+        </a>
+        )
+        }
       </div>
     </>
   );
